@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "menu retratil aberto.png",
+	"frame": {"x":1,"y":1,"w":663,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":663,"h":98},
+	"sourceSize": {"w":663,"h":98}
+},
+{
+	"filename": "menu retratil fechado.png",
+	"frame": {"x":666,"y":1,"w":119,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":98},
+	"sourceSize": {"w":119,"h":98}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "retratil.png",
+	"format": "RGBA4444",
+	"size": {"w":786,"h":100},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:57f7c85ad80e493d7f47f8b7d9198ca0:158ebf73084094e4e7c9868f8e9dd391:f6b706e3ec206292aef6d259d4ade333$"
+}
+}

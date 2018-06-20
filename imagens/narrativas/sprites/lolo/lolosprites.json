@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "Lôlô - chocado.png",
+	"frame": {"x":1553,"y":818,"w":386,"h":809},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":809},
+	"sourceSize": {"w":386,"h":809}
+},
+{
+	"filename": "Lôlô - convencido.png",
+	"frame": {"x":1553,"y":1,"w":386,"h":815},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":815},
+	"sourceSize": {"w":386,"h":815}
+},
+{
+	"filename": "Lôlô - default.png",
+	"frame": {"x":777,"y":1,"w":386,"h":823},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":823},
+	"sourceSize": {"w":386,"h":823}
+},
+{
+	"filename": "Lôlô - feliz.png",
+	"frame": {"x":1165,"y":826,"w":386,"h":809},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":809},
+	"sourceSize": {"w":386,"h":809}
+},
+{
+	"filename": "Lôlô - not amused.png",
+	"frame": {"x":1165,"y":1,"w":386,"h":823},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":823},
+	"sourceSize": {"w":386,"h":823}
+},
+{
+	"filename": "Lôlô - professor.png",
+	"frame": {"x":1,"y":1,"w":386,"h":834},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":834},
+	"sourceSize": {"w":386,"h":834}
+},
+{
+	"filename": "Lôlô - rindo.png",
+	"frame": {"x":777,"y":826,"w":386,"h":810},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":810},
+	"sourceSize": {"w":386,"h":810}
+},
+{
+	"filename": "Lôlô - surpreso.png",
+	"frame": {"x":389,"y":1,"w":386,"h":828},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":828},
+	"sourceSize": {"w":386,"h":828}
+},
+{
+	"filename": "Lôlô - tedio.png",
+	"frame": {"x":389,"y":831,"w":386,"h":807},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":807},
+	"sourceSize": {"w":386,"h":807}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lolosprites.png",
+	"format": "RGBA4444",
+	"size": {"w":1940,"h":1639},
+	"scale": "0.9375",
+	"smartupdate": "$TexturePacker:SmartUpdate:30f4452e2d2deb56a05a5b275026b06e:13bad9c5339600355d4dc3448d27fb6e:3bd5ec478318848ebe08b6c7bf2bf0b1$"
+}
+}

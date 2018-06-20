@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "helpo tela 01.png",
+	"frame": {"x":1,"y":1,"w":1075,"h":345},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1075,"h":345},
+	"sourceSize": {"w":1075,"h":345}
+},
+{
+	"filename": "helpo tela 02.png",
+	"frame": {"x":1,"y":348,"w":839,"h":479},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":839,"h":479},
+	"sourceSize": {"w":839,"h":479}
+},
+{
+	"filename": "helpo tela 03.png",
+	"frame": {"x":842,"y":498,"w":831,"h":435},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":831,"h":435},
+	"sourceSize": {"w":831,"h":435}
+},
+{
+	"filename": "helpo tela última 04.png",
+	"frame": {"x":1078,"y":1,"w":613,"h":495},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":613,"h":495},
+	"sourceSize": {"w":613,"h":495}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "helpo.png",
+	"format": "RGBA8888",
+	"size": {"w":1692,"h":934},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6639af7133f3a2f0e8bc076e9d892c1f:f4caa3299c98673ca8ccea676ab7652d:4d2f9beb685bcb7c26e2a9edf37acef6$"
+}
+}

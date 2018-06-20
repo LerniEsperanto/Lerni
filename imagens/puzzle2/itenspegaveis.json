@@ -1,0 +1,140 @@
+{"frames": [
+
+{
+	"filename": "abajour.png",
+	"frame": {"x":692,"y":1,"w":45,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":69},
+	"sourceSize": {"w":45,"h":69}
+},
+{
+	"filename": "cama.png",
+	"frame": {"x":238,"y":316,"w":274,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":274,"h":135},
+	"sourceSize": {"w":274,"h":135}
+},
+{
+	"filename": "chuveiro.png",
+	"frame": {"x":1,"y":1,"w":155,"h":314},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":314},
+	"sourceSize": {"w":155,"h":314}
+},
+{
+	"filename": "criado-mudo.png",
+	"frame": {"x":749,"y":412,"w":87,"h":81},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":81},
+	"sourceSize": {"w":87,"h":81}
+},
+{
+	"filename": "estante.png",
+	"frame": {"x":594,"y":1,"w":96,"h":297},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":297},
+	"sourceSize": {"w":96,"h":297}
+},
+{
+	"filename": "fogao.png",
+	"frame": {"x":306,"y":1,"w":125,"h":311},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":125,"h":311},
+	"sourceSize": {"w":125,"h":311}
+},
+{
+	"filename": "geladeira.png",
+	"frame": {"x":827,"y":121,"w":123,"h":289},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":123,"h":289},
+	"sourceSize": {"w":123,"h":289}
+},
+{
+	"filename": "guarda-roupa.png",
+	"frame": {"x":433,"y":1,"w":159,"h":299},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":299},
+	"sourceSize": {"w":159,"h":299}
+},
+{
+	"filename": "mesinha.png",
+	"frame": {"x":749,"y":254,"w":64,"h":108},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":108},
+	"sourceSize": {"w":64,"h":108}
+},
+{
+	"filename": "microondas.png",
+	"frame": {"x":838,"y":412,"w":86,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":58},
+	"sourceSize": {"w":86,"h":58}
+},
+{
+	"filename": "piabanheiro.png",
+	"frame": {"x":158,"y":1,"w":146,"h":313},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":313},
+	"sourceSize": {"w":146,"h":313}
+},
+{
+	"filename": "piadacozinha.png",
+	"frame": {"x":514,"y":302,"w":233,"h":197},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":233,"h":197},
+	"sourceSize": {"w":233,"h":197}
+},
+{
+	"filename": "quadros.png",
+	"frame": {"x":692,"y":121,"w":133,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":133,"h":131},
+	"sourceSize": {"w":133,"h":131}
+},
+{
+	"filename": "sofa.png",
+	"frame": {"x":749,"y":1,"w":217,"h":118},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":118},
+	"sourceSize": {"w":217,"h":118}
+},
+{
+	"filename": "tv.png",
+	"frame": {"x":1,"y":317,"w":129,"h":166},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":129,"h":166},
+	"sourceSize": {"w":129,"h":166}
+},
+{
+	"filename": "vaso.png",
+	"frame": {"x":132,"y":317,"w":104,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":160},
+	"sourceSize": {"w":104,"h":160}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "itenspegaveis.png",
+	"format": "RGBA8888",
+	"size": {"w":967,"h":500},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:5ac78158871881327d01aa1dd143893c:6d40328be4f29acf13d634e70851b311:7ddad60a6cf3ba95977f0086b77d6c9b$"
+}
+}

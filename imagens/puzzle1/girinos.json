@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "girino1.png",
+	"frame": {"x":1,"y":1304,"w":221,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":186},
+	"sourceSize": {"w":221,"h":186}
+},
+{
+	"filename": "girino2.png",
+	"frame": {"x":1,"y":1679,"w":221,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":184},
+	"sourceSize": {"w":221,"h":184}
+},
+{
+	"filename": "girino3.png",
+	"frame": {"x":1,"y":1492,"w":221,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":185},
+	"sourceSize": {"w":221,"h":185}
+},
+{
+	"filename": "girino4.png",
+	"frame": {"x":1,"y":1124,"w":222,"h":178},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":178},
+	"sourceSize": {"w":222,"h":178}
+},
+{
+	"filename": "girino5.png",
+	"frame": {"x":1,"y":938,"w":222,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":184},
+	"sourceSize": {"w":222,"h":184}
+},
+{
+	"filename": "girino6.png",
+	"frame": {"x":1,"y":188,"w":222,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":186},
+	"sourceSize": {"w":222,"h":186}
+},
+{
+	"filename": "girino7.png",
+	"frame": {"x":1,"y":1,"w":231,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":231,"h":185},
+	"sourceSize": {"w":231,"h":185}
+},
+{
+	"filename": "girino8.png",
+	"frame": {"x":1,"y":376,"w":222,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":186},
+	"sourceSize": {"w":222,"h":186}
+},
+{
+	"filename": "girino9.png",
+	"frame": {"x":1,"y":1865,"w":219,"h":177},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":177},
+	"sourceSize": {"w":219,"h":177}
+},
+{
+	"filename": "girino10.png",
+	"frame": {"x":1,"y":564,"w":222,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":185},
+	"sourceSize": {"w":222,"h":185}
+},
+{
+	"filename": "girino11.png",
+	"frame": {"x":1,"y":751,"w":222,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":185},
+	"sourceSize": {"w":222,"h":185}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "girinos.png",
+	"format": "RGBA4444",
+	"size": {"w":233,"h":2043},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:b868af739c67ed475634f10292d646fc:7e81fce7405169d1ed82c472c8c9eecd:0225801a58b0f62d82239f669b658126$"
+}
+}

@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "1.png",
+	"frame": {"x":1519,"y":1,"w":504,"h":725},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":725},
+	"sourceSize": {"w":504,"h":725}
+},
+{
+	"filename": "2.png",
+	"frame": {"x":1519,"y":728,"w":504,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":717},
+	"sourceSize": {"w":504,"h":717}
+},
+{
+	"filename": "3.png",
+	"frame": {"x":1,"y":734,"w":504,"h":711},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":711},
+	"sourceSize": {"w":504,"h":711}
+},
+{
+	"filename": "4.png",
+	"frame": {"x":507,"y":1,"w":504,"h":730},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":730},
+	"sourceSize": {"w":504,"h":730}
+},
+{
+	"filename": "5.png",
+	"frame": {"x":1013,"y":1,"w":504,"h":730},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":730},
+	"sourceSize": {"w":504,"h":730}
+},
+{
+	"filename": "6.png",
+	"frame": {"x":1,"y":1,"w":504,"h":731},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":731},
+	"sourceSize": {"w":504,"h":731}
+},
+{
+	"filename": "7.png",
+	"frame": {"x":507,"y":733,"w":504,"h":706},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":706},
+	"sourceSize": {"w":504,"h":706}
+},
+{
+	"filename": "8.png",
+	"frame": {"x":1013,"y":733,"w":504,"h":706},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":706},
+	"sourceSize": {"w":504,"h":706}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jilosprites.png",
+	"format": "RGBA4444",
+	"size": {"w":2024,"h":1446},
+	"scale": "0.9375",
+	"smartupdate": "$TexturePacker:SmartUpdate:6fdd04c6a64a300f5b3e471ce039842a:fdf418a64a9bbdc8dd9b30eafcd5881d:b629d1c22656bddacb1476b0e5119c6d$"
+}
+}

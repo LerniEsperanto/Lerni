@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "contador 01.png",
+	"frame": {"x":1,"y":1,"w":235,"h":448},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":235,"h":448},
+	"sourceSize": {"w":241,"h":487}
+},
+{
+	"filename": "contador 02.png",
+	"frame": {"x":238,"y":1,"w":208,"h":443},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":208,"h":443},
+	"sourceSize": {"w":210,"h":496}
+},
+{
+	"filename": "contador 03.png",
+	"frame": {"x":291,"y":446,"w":197,"h":322},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":197,"h":322},
+	"sourceSize": {"w":199,"h":363}
+},
+{
+	"filename": "contador 04.png",
+	"frame": {"x":448,"y":1,"w":305,"h":431},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":305,"h":431},
+	"sourceSize": {"w":311,"h":474}
+},
+{
+	"filename": "contador 05.png",
+	"frame": {"x":1150,"y":299,"w":225,"h":351},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":351},
+	"sourceSize": {"w":226,"h":384}
+},
+{
+	"filename": "contador 06.png",
+	"frame": {"x":831,"y":406,"w":317,"h":372},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":25,"w":317,"h":372},
+	"sourceSize": {"w":439,"h":449}
+},
+{
+	"filename": "contador 07.png",
+	"frame": {"x":490,"y":434,"w":339,"h":348},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":348},
+	"sourceSize": {"w":339,"h":392}
+},
+{
+	"filename": "contador 08.png",
+	"frame": {"x":1029,"y":1,"w":400,"h":296},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":296},
+	"sourceSize": {"w":400,"h":351}
+},
+{
+	"filename": "contador 09.png",
+	"frame": {"x":755,"y":1,"w":272,"h":403},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":272,"h":403},
+	"sourceSize": {"w":272,"h":445}
+},
+{
+	"filename": "contador 10.png",
+	"frame": {"x":1,"y":451,"w":288,"h":332},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":288,"h":332},
+	"sourceSize": {"w":290,"h":384}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "contagem.png",
+	"format": "RGBA4444",
+	"size": {"w":1430,"h":784},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c10fd154ed634976d607a15e2077bcea:335311e713b8ecdb6d5c392e3d92e9c2:cdaef61d1169a9f28d3877ed57bef7ce$"
+}
+}

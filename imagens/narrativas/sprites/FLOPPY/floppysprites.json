@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "Floppy - animado.png",
+	"frame": {"x":350,"y":1,"w":347,"h":813},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":813},
+	"sourceSize": {"w":347,"h":813}
+},
+{
+	"filename": "Floppy - confuso.png",
+	"frame": {"x":699,"y":809,"w":347,"h":799},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":799},
+	"sourceSize": {"w":347,"h":799}
+},
+{
+	"filename": "Floppy - deus é quem sabe.png",
+	"frame": {"x":699,"y":1,"w":347,"h":806},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":806},
+	"sourceSize": {"w":347,"h":806}
+},
+{
+	"filename": "Floppy - feliz.png",
+	"frame": {"x":1048,"y":803,"w":347,"h":793},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":793},
+	"sourceSize": {"w":347,"h":793}
+},
+{
+	"filename": "Floppy - puto.png",
+	"frame": {"x":350,"y":816,"w":347,"h":792},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":792},
+	"sourceSize": {"w":347,"h":792}
+},
+{
+	"filename": "Floppy - questionando.png",
+	"frame": {"x":1048,"y":1,"w":347,"h":800},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":800},
+	"sourceSize": {"w":347,"h":800}
+},
+{
+	"filename": "Floppy - surpreso.png",
+	"frame": {"x":1,"y":1,"w":347,"h":815},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":815},
+	"sourceSize": {"w":347,"h":815}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "floppysprites.png",
+	"format": "RGBA4444",
+	"size": {"w":1396,"h":1609},
+	"scale": "0.9375",
+	"smartupdate": "$TexturePacker:SmartUpdate:daf6157f214f5771477d3ea7f2d9e870:24fc409a0a0bb64144f1533f43ced9c9:4197f808bb12faf9dbcceb0cbd3e3e35$"
+}
+}

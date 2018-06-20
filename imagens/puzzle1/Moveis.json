@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "cortinacorte.png",
+	"frame": {"x":1,"y":1,"w":660,"h":708},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":660,"h":708},
+	"sourceSize": {"w":660,"h":708}
+},
+{
+	"filename": "estantecorte.png",
+	"frame": {"x":663,"y":1,"w":452,"h":653},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":452,"h":653},
+	"sourceSize": {"w":452,"h":653}
+},
+{
+	"filename": "mesinhacorte.png",
+	"frame": {"x":663,"y":656,"w":641,"h":231},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":641,"h":231},
+	"sourceSize": {"w":641,"h":231}
+},
+{
+	"filename": "plantacorte.png",
+	"frame": {"x":1306,"y":544,"w":263,"h":345},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":263,"h":345},
+	"sourceSize": {"w":263,"h":345}
+},
+{
+	"filename": "poltronacorte.png",
+	"frame": {"x":1615,"y":426,"w":351,"h":485},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":351,"h":485},
+	"sourceSize": {"w":351,"h":485}
+},
+{
+	"filename": "quadrocorte.png",
+	"frame": {"x":1615,"y":1,"w":432,"h":423},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":432,"h":423},
+	"sourceSize": {"w":432,"h":423}
+},
+{
+	"filename": "tvcorte.png",
+	"frame": {"x":1117,"y":1,"w":496,"h":541},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":496,"h":541},
+	"sourceSize": {"w":496,"h":541}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Moveis.png",
+	"format": "RGBA4444",
+	"size": {"w":2048,"h":912},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:735cf9999168b0c9dd93a8171e37a2ed:b5a5d2f7b0bf1399681535a3c6f95878:a77dabd23483124702c54dfb51a59474$"
+}
+}

@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "revisao2puzzle2.png",
+	"frame": {"x":1,"y":269,"w":557,"h":546},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":557,"h":546},
+	"sourceSize": {"w":557,"h":546}
+},
+{
+	"filename": "revisaoPuzzle2.png",
+	"frame": {"x":1,"y":1,"w":693,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":693,"h":266},
+	"sourceSize": {"w":693,"h":266}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "revisao2.png",
+	"format": "RGBA8888",
+	"size": {"w":695,"h":816},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c11200ee9b0fb1f9e9ecc9713cdf1543:5b043e9b035035ba1bb8f936f58e7c00:a6388eed2cd513c95488685449485eb8$"
+}
+}

@@ -1,0 +1,188 @@
+{"frames": [
+
+{
+	"filename": "01 Pinhata.png",
+	"frame": {"x":293,"y":256,"w":165,"h":295},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":165,"h":295},
+	"sourceSize": {"w":165,"h":295}
+},
+{
+	"filename": "02 caixa de som.png",
+	"frame": {"x":297,"y":1,"w":184,"h":253},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":184,"h":253},
+	"sourceSize": {"w":184,"h":253}
+},
+{
+	"filename": "03 pacotes de guardanapo.png",
+	"frame": {"x":1,"y":779,"w":274,"h":289},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":274,"h":289},
+	"sourceSize": {"w":274,"h":289}
+},
+{
+	"filename": "04 pacotes de copos.png",
+	"frame": {"x":267,"y":1405,"w":140,"h":296},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":140,"h":296},
+	"sourceSize": {"w":140,"h":296}
+},
+{
+	"filename": "05 pacotes de pratos.png",
+	"frame": {"x":1,"y":1070,"w":271,"h":286},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":271,"h":286},
+	"sourceSize": {"w":271,"h":286}
+},
+{
+	"filename": "06 conjunto de chapéu 01.png",
+	"frame": {"x":287,"y":553,"w":214,"h":282},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":214,"h":282},
+	"sourceSize": {"w":214,"h":282}
+},
+{
+	"filename": "06 conjunto de chapéu 02.png",
+	"frame": {"x":277,"y":837,"w":214,"h":282},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":214,"h":282},
+	"sourceSize": {"w":214,"h":282}
+},
+{
+	"filename": "06 conjunto de chapéu 03.png",
+	"frame": {"x":274,"y":1121,"w":214,"h":282},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":214,"h":282},
+	"sourceSize": {"w":214,"h":282}
+},
+{
+	"filename": "07 óculos engraçado 01.png",
+	"frame": {"x":1,"y":317,"w":284,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":284,"h":121},
+	"sourceSize": {"w":284,"h":121}
+},
+{
+	"filename": "07 óculos engraçado 02.png",
+	"frame": {"x":1,"y":440,"w":284,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":284,"h":121},
+	"sourceSize": {"w":284,"h":121}
+},
+{
+	"filename": "07 óculos engraçado 03.png",
+	"frame": {"x":1,"y":563,"w":284,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":284,"h":121},
+	"sourceSize": {"w":284,"h":121}
+},
+{
+	"filename": "07 óculos engraçado 04.png",
+	"frame": {"x":1,"y":215,"w":290,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":290,"h":100},
+	"sourceSize": {"w":290,"h":100}
+},
+{
+	"filename": "07 óculos engraçado 05.png",
+	"frame": {"x":1,"y":1358,"w":264,"h":93},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":264,"h":93},
+	"sourceSize": {"w":264,"h":93}
+},
+{
+	"filename": "07 óculos engraçado 06.png",
+	"frame": {"x":1,"y":1,"w":294,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":294,"h":105},
+	"sourceSize": {"w":294,"h":105}
+},
+{
+	"filename": "07 óculos engraçados 07.png",
+	"frame": {"x":1,"y":108,"w":294,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":294,"h":105},
+	"sourceSize": {"w":294,"h":105}
+},
+{
+	"filename": "08 bandeirinhas.png",
+	"frame": {"x":1,"y":686,"w":277,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":277,"h":91},
+	"sourceSize": {"w":277,"h":91}
+},
+{
+	"filename": "09 velas.png",
+	"frame": {"x":409,"y":1405,"w":79,"h":271},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":271},
+	"sourceSize": {"w":79,"h":271}
+},
+{
+	"filename": "10 balão 1.png",
+	"frame": {"x":1,"y":1703,"w":119,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":274},
+	"sourceSize": {"w":119,"h":274}
+},
+{
+	"filename": "10 balão 2.png",
+	"frame": {"x":122,"y":1453,"w":119,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":274},
+	"sourceSize": {"w":119,"h":274}
+},
+{
+	"filename": "10 balão 3.png",
+	"frame": {"x":122,"y":1729,"w":119,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":274},
+	"sourceSize": {"w":119,"h":274}
+},
+{
+	"filename": "10 balão 4.png",
+	"frame": {"x":243,"y":1703,"w":119,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":274},
+	"sourceSize": {"w":119,"h":274}
+},
+{
+	"filename": "10 balão 5.png",
+	"frame": {"x":364,"y":1703,"w":119,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":274},
+	"sourceSize": {"w":119,"h":274}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "coletaveis.png",
+	"format": "RGBA4444",
+	"size": {"w":502,"h":2004},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:550e8cf5704c4bb0eb504e52d32a3921:97e8605a77b2d04b3c4360663aef4987:f31c945105bef275d9273b78c907c823$"
+}
+}
