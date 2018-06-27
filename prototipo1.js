@@ -302,7 +302,7 @@ function exibeCor(){
       cor = "verda";
     break;
     case 3:
-      cor = "ruĝa";
+      cor = "ruĜa";
     break;
     case 4:
       cor = "purpura";
@@ -345,7 +345,7 @@ function iniciaPuzzleUm(){
   imageCenario.width = 1920;
   imageCenario.height = 1080;
   interfaceAtual.add(imageCenario);
-  controle = game.rnd.integerInRange(0,3);
+  controle = 4;
   sapos = game.add.group();
   objetosCenario = game.add.group();
   let cortina = game.add.image(0,100,"moveis",0);
@@ -376,8 +376,18 @@ function iniciaPuzzleUm(){
   objetosCenario.add(mesinha);
   tt = game.add.text(900,100,"Cor atual");
   tt.font = "Luckiest Guy";
-  c = game.add.text(900,200,exibeCor());
+  tt.fill = "white";
+  tt.stroke = "black";
+  tt.strokeThickness = 10;
+  tt.fontSize = 40;
+  c = game.add.text(900,200,"purpura");
   c.font = "Luckiest Guy";
+  c.fill = "black";
+  c.strokeThickness = 10;
+  c.stroke = "white";
+  c.fontSize = 40;
+  controle = game.rnd.integerInRange(0,10);
+  c.setText(exibeCor());
   exibeEscore = game.add.text(1200,50,"Pontos: "+escore1);
   exibeEscore.font = "Luckiest Guy";
   interfaceAtual.add(sapos);

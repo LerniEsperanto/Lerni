@@ -17,7 +17,11 @@ WebFontConfig = {
 
     //  The Google Fonts we want to load (specify as many as you like in the array)
     google: {
-      families: ['Luckiest Guy', 'Montserrat']
+      families: ['Montserrat']
+    },
+    custom:{
+      families:['Luckiest Guy'],
+      urls:['fontes/stylesheet.css']
     }
 };
 function preload(){
@@ -60,7 +64,7 @@ function preload(){
   game.load.image("fundoLoja","imagens/puzzle3/fundoLoja.png");
   game.load.atlasJSONHash("coletaveis","imagens/puzzle3/coletaveis.png","imagens/puzzle3/coletaveis.json");
   game.load.spritesheet("estrelas","imagens/interface/estrelas.png",161,155);
-  game.load.atlasJSONHash("objetosPuzzle4","imagens/puzzle4/objetospuzzle4.png","imagens/puzzle4/objetospuzzle4.json");
+  game.load.atlasJSONHash("objetosPuzzle4","imagens/puzzle4/objetosPuzzle4.png","imagens/puzzle4/objetospuzzle4.json");
   game.load.image("fundoPuzzle4","imagens/puzzle4/Fundo.png");
   game.load.image("camada01","imagens/puzzle4/Camada1.png");
   game.load.image("camada02","imagens/puzzle4/camada2.png");
@@ -206,7 +210,7 @@ function dialogoInicial(){
   interfaceAtual.removeAll(true);
   let imgfase01 = game.add.image(0,0,"bgNarrativas");
   interfaceAtual.add(imgfase01);
-  let vetorTexto = [{nome:"Floppy", texto:"Lôlô ! Lôlô!\nVeja só! Esse é o convite que fiz para a minha festinha!"},{nome:"Lolô",texto:"Olha só! Está muito bem feito Floppy!"},{nome:"Floppy",texto:"Obrigado! Estou muito animado para ela!\nFinalmente vou poder conhecer os nossos outros primos que vivem fora."},{nome:"Lolô",texto:"Fico feliz por você, vai ser uma experiência únic…\nO que foi? Por que essa cara triste?"},{nome:"Floppy",texto:"Quero muito conhecê-los, mas não sei como irei conversar com eles.\nMamãe disse que eles não falam português muito bem, e sim um idioma estranho\nchamado espe-, espo-, esp-..."},{nome:"Lolô",texto:"Esperanto?"},{nome:"Floppy",texto:"Sim, esse mesmo e eu não sei nada sobre…"},{nome:"Lolô",texto:"O esperanto é uma língua criada para que ser usada por todos.\nEla possui várias palavras tiradas do português, do inglês, do francês e de outras\nlínguas conhecidas!"},{nome:"Floppy",texto:"Nossa eu não sabia que existia um idioma assim!\nMas como eu vou aprender isso?"},{nome:"Lolô",texto:"Calma, calma. Olha só, eu sei falar esperanto e não é tão difícil..."},{nome:"Floppy",texto:"VOCÊ SABE?!"},{nome:"Lolô",texto:"Claro! O que acha de irmos ajeitar os preparativos para sua festa enquanto eu\nte ensino sobre?"},{nome:"Floppy",texto:"Eu adoraria!"},{nome:"Jiló",texto:"Oi pessoal, do que estão falando?"},{nome:"Floppy",texto:"O Lôlô vai me ensinar esperanto!"},{nome:"Jiló",texto:"Aquela língua estranha e boba que a sua mãe falou?"},{nome:"Floppy",texto:"JILÓ!"},{nome:"Lolô",texto:"Gostaria de nos ajudar Jiló?"},{nome:"Jiló",texto:"É, pode ser né..."}];
+  let vetorTexto = [{nome:"Floppy", texto:"Lôlô! Lôlô!\nVeja só! Esse é o convite que fiz para a minha festinha!"},{nome:"Lolô",texto:"Olha só! Está muito bem feito Floppy!"},{nome:"Floppy",texto:"Obrigado! Estou muito animado para ela!\nFinalmente vou poder conhecer os nossos outros primos que vivem fora."},{nome:"Lolô",texto:"Fico feliz por você, vai ser uma experiência únic…\nO que foi? Por que essa cara triste?"},{nome:"Floppy",texto:"Quero muito conhecê-los, mas não sei como irei conversar com eles.\nMamãe disse que eles não falam português muito bem, e sim um idioma estranho\nchamado espe-, espo-, esp-..."},{nome:"Lolô",texto:"Esperanto?"},{nome:"Floppy",texto:"Sim, esse mesmo e eu não sei nada sobre…"},{nome:"Lolô",texto:"O esperanto é uma língua criada para que ser usada por todos.\nEla possui várias palavras tiradas do português, do inglês, do francês e de outras\nlínguas conhecidas!"},{nome:"Floppy",texto:"Nossa eu não sabia que existia um idioma assim!\nMas como eu vou aprender isso?"},{nome:"Lolô",texto:"Calma, calma. Olha só, eu sei falar esperanto e não é tão difícil..."},{nome:"Floppy",texto:"VOCÊ SABE?!"},{nome:"Lolô",texto:"Claro! O que acha de irmos ajeitar os preparativos para sua festa enquanto eu\nte ensino sobre?"},{nome:"Floppy",texto:"Eu adoraria!"},{nome:"Jiló",texto:"Oi pessoal, do que estão falando?"},{nome:"Floppy",texto:"O Lôlô vai me ensinar esperanto!"},{nome:"Jiló",texto:"Aquela língua estranha e boba que a sua mãe falou?"},{nome:"Floppy",texto:"JILÓ!"},{nome:"Lolô",texto:"Gostaria de nos ajudar Jiló?"},{nome:"Jiló",texto:"É, pode ser né..."}];
   let floppy = game.add.image(100,300,"floppy",0);
   interfaceAtual.add(floppy);
   let lolo = game.add.image(1000,300,"lolo",0);
