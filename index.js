@@ -8,6 +8,8 @@ var guardaTrava=0;
 var controladorAtt = 0;
 var estaNoJogo=false;
 var contadorSegundos=0, contadorMinutos=0, contadorMilesimos=0;
+var fatorFonte = 0;
+var textoExemplo;
 WebFontConfig = {
 
     //  'active' means all requested fonts have finished loading
@@ -170,10 +172,46 @@ function configuracoes(){
   interfaceAtual.removeAll(true);
   imagemConfig = game.add.image(200,200,"conf");
   interfaceAtual.add(imagemConfig);
-  botaoVoltar = game.add.button(300,700,"botoes",menu,this,23,23,22);
+  let textoConfig = game.add.text(650,200,"CONFIGURAÇÃO");
+  textoConfig.font = "Luckiest Guy";
+  textoConfig.fontSize = 90 + fatorFonte;
+  textoConfig.stroke = "#00a89d";
+  textoConfig.fill = "#3ad898";
+  textoConfig.strokeThickness = 10;
+  textoConfig.fontWeight = 100;
+  let musicaConfig = game.add.text(680,470,"MÚSICA");
+  musicaConfig.font = "Luckiest Guy";
+  musicaConfig.fontSize = 80 + fatorFonte;
+  musicaConfig.stroke = "#3ad898";
+  musicaConfig.fill = "#00a99d";
+  musicaConfig.strokeThickness = 10;
+  musicaConfig.fontWeight = 100;
+  botaoVoltar = game.add.button(100,900,"botoes",menu,this,23,23,22);
   botaoVoltar.width = 150;
   botaoVoltar.height = 150;
   interfaceAtual.add(botaoVoltar);
+  interfaceAtual.add(textoConfig);
+  interfaceAtual.add(musicaConfig);
+  let fonteConfig = game.add.text(500,670,"AUMENTAR/DIMINUIR FONTE");
+  fonteConfig.font = "Luckiest Guy";
+  fonteConfig.fontSize = 80 + fatorFonte;
+  fonteConfig.stroke = "#3ad898";
+  fonteConfig.fill = "#00a99d";
+  fonteConfig.strokeThickness = 10;
+  fonteConfig.fontWeight = 100;
+  textoExemplo = game.add.text(330,670,"A");
+  textoExemplo.font = "Luckiest Guy";
+  textoExemplo.fontSize = 60 + fatorFonte;
+  textoExemplo.stroke = "#3ad898";
+  textoExemplo.fill = "#00a99d";
+  textoExemplo.strokeThickness = 10;
+  textoExemplo.fontWeight = 100;
+  let aumentaFonte = game.add.button(400,670,"botoes",aumentarFonte,this,27,27,26);
+  let diminuiFonte = game.add.button(200,670,"botoes",diminuirFonte,this,29,29,28);
+  interfaceAtual.add(fonteConfig);
+  interfaceAtual.add(textoExemplo);
+  interfaceAtual.add(aumentaFonte);
+  interfaceAtual.add(diminuiFonte);
   menuPersistente();
 }
 
@@ -528,6 +566,22 @@ function popConf(){
   let btFechar = game.add.button(1580,100,"botoes",fechar,this,11,11,10);
   btFechar.width = 144;
   btFechar.height = 155;
+  let textoConfig = game.add.text(650,130,"CONFIGURAÇÃO");
+  textoConfig.font = "Luckiest Guy";
+  textoConfig.fontSize = 90 + fatorFonte;
+  textoConfig.stroke = "#00a89d";
+  textoConfig.fill = "#3ad898";
+  textoConfig.strokeThickness = 10;
+  textoConfig.fontWeight = 100;
+  let musicaConfig = game.add.text(680,400,"MÚSICA");
+  musicaConfig.font = "Luckiest Guy";
+  musicaConfig.fontSize = 80 + fatorFonte;
+  musicaConfig.stroke = "#3ad898";
+  musicaConfig.fill = "#00a99d";
+  musicaConfig.strokeThickness = 10;
+  musicaConfig.fontWeight = 100;
+  compConfig.add(textoConfig);
+  compConfig.add(musicaConfig);
   compConfig.add(janelaConf);
   compConfig.add(btFechar);
   function fechar(){
@@ -540,6 +594,14 @@ function popConf(){
     let janelaAjuda = game.add.image(150,150,"ajuda");
     janelaAjuda.width = 1590;
     janelaAjuda.height = 818;
+    let tituloAjuda = game.add.text(830,170,"HELPO");
+    tituloAjuda.font = "Luckiest Guy";
+    tituloAjuda.fontSize = 90 + fatorFonte;
+    tituloAjuda.stroke = "#6e2e97";
+    tituloAjuda.fill = "#e2c564";
+    tituloAjuda.strokeThickness = 10;
+    tituloAjuda.fontWeight = 100;
+    compAjuda.add(tituloAjuda);
     let imagemRevisao = game.add.image(450,300,"helpo",0);
     compAjuda.add(imagemRevisao);
     let btAvancar = game.add.button(1450,690,"botoes",proximo,this,3,3,2);
@@ -577,6 +639,14 @@ function popConf(){
     btFechar.height = 155;
     compRevisao.add(janelaRevisao);
     compRevisao.add(btFechar);
+    let tituloRevisao = game.add.text(800,150,"REVISIO");
+    tituloRevisao.font = "Luckiest Guy";
+    tituloRevisao.fontSize = 90 + fatorFonte;
+    tituloRevisao.stroke = "#67517a";
+    tituloRevisao.fill = "#dfea8c";
+    tituloRevisao.strokeThickness = 10;
+    tituloRevisao.fontWeight = 100;
+    compRevisao.add(tituloRevisao);
     switch(controladorAtt){
         case 1:
         let imagemR1 = game.add.image(650,310,"revisaoPuzzle1");
@@ -620,12 +690,19 @@ function instrucao() {
     instrucaoUm.width = 1590;
     instrucaoUm.height = 818;
     interfaceAtual.add(instrucaoUm);
+    let tituloInstrucao  = game.add.text(650,150,"INSTRUKCIOJ");
+    tituloInstrucao.font = "Luckiest Guy";
+    tituloInstrucao.fontSize = 90 + fatorFonte;
+    tituloInstrucao.stroke = "#603813";
+    tituloInstrucao.fill = "#ffffff";
+    tituloInstrucao.strokeThickness = 10;
+    tituloInstrucao.fontWeight = 100;
+    compInstrucao.add(tituloInstrucao);
     let btFechar = game.add.button(1585,150,"botoes",fechar,this,11,11,10);
     btFechar.width = 144;
     btFechar.height = 155;
     compInstrucao.add(instrucaoUm);
     compInstrucao.add(btFechar);
-
     switch(controladorAtt){
         case 1:
           let texto1 = game.add.text(450,400,"Os priminhos girinos de Floppy são girinos muito brincalhões,\nmas bagunçaram a casa toda e se sujaramde tinta.\nSão muitos girinos de muitas cores, será que\nvocê consegue pegar todos? Clique com o mouse sobre o\ngirino da cor certa.\n\nCheque a revisão para descobrir de que cor eles se pintaram!");
@@ -669,6 +746,19 @@ function janelaConfirmacao1(){
     compConfirmacao.add(janela);
     compConfirmacao.add(botaoverde);
     compConfirmacao.add(botaovermelho);
+    let tituloConfimarcao = game.add.text(670,400,"TEM CERTEZA QUE DESEJA SAIR?");
+    tituloConfimarcao.font = "Luckiest Guy";
+    tituloConfimarcao.fontSize = 50 + fatorFonte;
+    tituloConfimarcao.stroke = "#f15a24";
+    tituloConfimarcao.fill = "#ffffff";
+    tituloConfimarcao.strokeThickness = 10;
+    tituloConfimarcao.fontWeight = 100;
+    compConfirmacao.add(tituloConfimarcao);
+    let textoConfirmacao = game.add.text(740,500,"Seu progresso será perdido.");
+    textoConfirmacao.font = "Montserrat";
+    textoConfirmacao.fontSize = 40 + fatorFonte;
+    textoConfirmacao.fill = "#318961";
+    compConfirmacao.add(textoConfirmacao);
     function confirmar(){
       compConfirmacao.removeAll(true);
       menu();
@@ -696,6 +786,19 @@ function janelaConfirmacao2(){
     compConfirmacao.add(janela);
     compConfirmacao.add(botaoverde);
     compConfirmacao.add(botaovermelho);
+    let tituloConfimarcao = game.add.text(670,400,"TEM CERTEZA QUE DESEJA SAIR?");
+    tituloConfimarcao.font = "Luckiest Guy";
+    tituloConfimarcao.fontSize = 50 + fatorFonte;
+    tituloConfimarcao.stroke = "#f15a24";
+    tituloConfimarcao.fill = "#ffffff";
+    tituloConfimarcao.strokeThickness = 10;
+    tituloConfimarcao.fontWeight = 100;
+    compConfirmacao.add(tituloConfimarcao);
+    let textoConfirmacao = game.add.text(740,500,"Seu progresso será perdido.");
+    textoConfirmacao.font = "Montserrat";
+    textoConfirmacao.fontSize = 40 + fatorFonte;
+    textoConfirmacao.fill = "#318961";
+    compConfirmacao.add(textoConfirmacao);
     function confirmar(){
       compConfirmacao.removeAll(true);
       levels();
@@ -774,4 +877,14 @@ function relogio(){
     contadorMinutos++;
     contadorSegundos=0;
   }
+}
+
+function aumentarFonte(){
+  fatorFonte+=2;
+  textoExemplo.fontSize = 60 + fatorFonte;
+}
+
+function diminuirFonte(){
+  fatorFonte-=2;
+  textoExemplo.fontSize = 60 + fatorFonte;
 }
