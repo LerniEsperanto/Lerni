@@ -28,12 +28,14 @@ function iniciaPuzzleTres(){
   textoItem = game.add.text(100,200,indicadorItens[itemVigente].nomeItem);
   textoItem.font="Luckiest Guy";
   textoItem.visible = false;
+  textoItem.fontSize = 30 + fatorFonte;
   fundoItem = game.add.image(10,500,"quadrado");
   fundoItem.scale.y = 1.4;
   fundoItem.scale.x = 1.1;
   imagemItem = game.add.image(50,530,"contagem",itemVigente);
   textoQtd = game.add.text(50,1000,"Quantidade: "+geraExtenso(contPego)+"/"+geraExtenso(indicadorItens[itemVigente].quantidade));
   textoQtd.font = "Luckiest Guy";
+  textoQtd.fontSize = 30 + fatorFonte;
   itens = game.add.group();
   let item = game.add.sprite(400,100,"coletaveis",3);
   item.lifespan = 3000;
@@ -55,6 +57,7 @@ function iniciaPuzzleTres(){
   interfaceAtual.add(backgroundFundo);
   interfaceAtual.add(bolsa);
   interfaceAtual.add(itens);
+  interfaceAtual.add(fundoItem);
   interfaceAtual.add(textoItem);
   interfaceAtual.add(textoQtd);
   interfaceAtual.add(botaoRevisaoTres);
@@ -225,10 +228,18 @@ function terminarJogoTres(){
     botaoConclusao2 = game.add.button(1200,700,"botoes",level2,this,3,3,2);
     botaoConclusao2.width = 180;
     botaoConclusao2.height = 200;
+    let  tituloParabens = game.add.text(670,160,"GRATULOJN");
+    tituloParabens.font = "Luckiest Guy";
+    tituloParabens.fontSize = 110 + fatorFonte;
+    tituloParabens.stroke = "#f7931e";
+    tituloParabens.fill = "#ffee73";
+    tituloParabens.strokeThickness = 10;
+    tituloParabens.fontWeight = 100;
     interfaceAtual.add(retangulo);
     interfaceAtual.add(janelaConclusao);
     interfaceAtual.add(botaoConclusao1);
     interfaceAtual.add(botaoConclusao2);
+    interfaceAtual.add(tituloParabens);
     terminouTres = true;
     if(escoreTres>=3500){
       let estrela1 = game.add.sprite(500,100,"estrelas",0);

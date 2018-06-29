@@ -248,7 +248,7 @@ function dialogoInicial(){
   interfaceAtual.removeAll(true);
   let imgfase01 = game.add.image(0,0,"bgNarrativas");
   interfaceAtual.add(imgfase01);
-  let vetorTexto = [{nome:"Floppy", texto:"Lôlô! Lôlô!\nVeja só! Esse é o convite que fiz para a minha festinha!"},{nome:"Lolô",texto:"Olha só! Está muito bem feito Floppy!"},{nome:"Floppy",texto:"Obrigado! Estou muito animado para ela!\nFinalmente vou poder conhecer os nossos outros primos que vivem fora."},{nome:"Lolô",texto:"Fico feliz por você, vai ser uma experiência únic…\nO que foi? Por que essa cara triste?"},{nome:"Floppy",texto:"Quero muito conhecê-los, mas não sei como irei conversar com eles.\nMamãe disse que eles não falam português muito bem, e sim um idioma estranho\nchamado espe-, espo-, esp-..."},{nome:"Lolô",texto:"Esperanto?"},{nome:"Floppy",texto:"Sim, esse mesmo e eu não sei nada sobre…"},{nome:"Lolô",texto:"O esperanto é uma língua criada para que ser usada por todos.\nEla possui várias palavras tiradas do português, do inglês, do francês e de outras\nlínguas conhecidas!"},{nome:"Floppy",texto:"Nossa eu não sabia que existia um idioma assim!\nMas como eu vou aprender isso?"},{nome:"Lolô",texto:"Calma, calma. Olha só, eu sei falar esperanto e não é tão difícil..."},{nome:"Floppy",texto:"VOCÊ SABE?!"},{nome:"Lolô",texto:"Claro! O que acha de irmos ajeitar os preparativos para sua festa enquanto eu\nte ensino sobre?"},{nome:"Floppy",texto:"Eu adoraria!"},{nome:"Jiló",texto:"Oi pessoal, do que estão falando?"},{nome:"Floppy",texto:"O Lôlô vai me ensinar esperanto!"},{nome:"Jiló",texto:"Aquela língua estranha e boba que a sua mãe falou?"},{nome:"Floppy",texto:"JILÓ!"},{nome:"Lolô",texto:"Gostaria de nos ajudar Jiló?"},{nome:"Jiló",texto:"É, pode ser né..."}];
+  let vetorTexto = [{nome:"Floppy", texto:"Lôlô! Lôlô!\nVeja só! Esse é o convite que fiz para a minha festinha!"},{nome:"Lolô",texto:"Olha só! Está muito bem feito Floppy!"},{nome:"Floppy",texto:"Obrigado! Estou muito animado para ela!\nFinalmente vou poder conhecer os nossos outros primos que vivem fora."},{nome:"Lolô",texto:"Fico feliz por você, vai ser uma experiência únic…\nO que foi? Por que essa cara triste?"},{nome:"Floppy",texto:"Quero muito conhecê-los, mas não sei como irei conversar com eles.\nMamãe disse que eles não falam português muito bem,\n e sim um idioma estranho chamado espe-, espo-, esp-..."},{nome:"Lolô",texto:"Esperanto?"},{nome:"Floppy",texto:"Sim, esse mesmo e eu não sei nada sobre…"},{nome:"Lolô",texto:"O esperanto é uma língua criada para que ser usada por todos.\nEla possui várias palavras tiradas do português, do inglês, do francês e de outras\nlínguas conhecidas!"},{nome:"Floppy",texto:"Nossa eu não sabia que existia um idioma assim!\nMas como eu vou aprender isso?"},{nome:"Lolô",texto:"Calma, calma. Olha só, eu sei falar esperanto e não é tão difícil..."},{nome:"Floppy",texto:"VOCÊ SABE?!"},{nome:"Lolô",texto:"Claro! O que acha de irmos ajeitar os preparativos para sua festa enquanto eu\nte ensino sobre?"},{nome:"Floppy",texto:"Eu adoraria!"},{nome:"Jiló",texto:"Oi pessoal, do que estão falando?"},{nome:"Floppy",texto:"O Lôlô vai me ensinar esperanto!"},{nome:"Jiló",texto:"Aquela língua estranha e boba que a sua mãe falou?"},{nome:"Floppy",texto:"JILÓ!"},{nome:"Lolô",texto:"Gostaria de nos ajudar Jiló?"},{nome:"Jiló",texto:"É, pode ser né..."}];
   let floppy = game.add.image(100,300,"floppy",0);
   interfaceAtual.add(floppy);
   let lolo = game.add.image(1000,300,"lolo",0);
@@ -256,20 +256,22 @@ function dialogoInicial(){
   let jilo = game.add.image(500,300,"jilo",0);
   interfaceAtual.add(jilo);
   jilo.visible = false;
-  let balaoDialogo = game.add.image(400,700,"dialogo");
-  balaoDialogo.width = 1269;
+  let balaoDialogo = game.add.image(400-fatorFonte*20,700,"dialogo");
+  balaoDialogo.width = 1269+fatorFonte*20;
   balaoDialogo.height = 268;
   interfaceAtual.add(balaoDialogo);
-  let nome = game.add.text(450,750,vetorTexto[controlaTexto].nome);
+  let nome = game.add.text(430-fatorFonte*20,750,vetorTexto[controlaTexto].nome);
   nome.font = "Luckiest Guy";
-  let dialogo = game.add.text(450,800,vetorTexto[controlaTexto].texto);
+  nome.fontSize = 30 + fatorFonte;
+  let dialogo = game.add.text(430-fatorFonte*20,800,vetorTexto[controlaTexto].texto);
   dialogo.font = "Montserrat";
+  dialogo.fontSize = 27 + fatorFonte;
   interfaceAtual.add(nome);
   interfaceAtual.add(dialogo);
   let botaoAvancar = game.add.button(1700,850,"botoes",avancar,this,3,3,2);
   botaoAvancar.width = 90;
   botaoAvancar.height = 100;
-  let botaoRetroceder = game.add.button(280,850,"botoes",retroceder,this,23,23,22);
+  let botaoRetroceder = game.add.button(280-fatorFonte*20,850,"botoes",retroceder,this,23,23,22);
   botaoRetroceder.width = 90;
   botaoRetroceder.height = 100;
   let irLevels = game.add.button(1700,700,"botoes",levels,this,13,13,12);
@@ -631,9 +633,9 @@ function popConf(){
   }
   function popRevisao(){
     let compRevisao = new Phaser.ArraySet();
-    let janelaRevisao = game.add.image(150,150,"revisao");
-    janelaRevisao.width = 1590;
-    janelaRevisao.height = 818;
+    let janelaRevisao = game.add.image(150-fatorFonte*5,150-fatorFonte*5,"revisao");
+    janelaRevisao.width = 1590+fatorFonte*10;
+    janelaRevisao.height = 818+fatorFonte*5;
     let btFechar = game.add.button(1590,150,"botoes",fechar,this,11,11,10);
     btFechar.width = 144;
     btFechar.height = 155;
@@ -686,9 +688,9 @@ function popConf(){
 
 function instrucao() {
     let compInstrucao = new Phaser.ArraySet();
-    let instrucaoUm = game.add.image(150,150,"instrucoes");
-    instrucaoUm.width = 1590;
-    instrucaoUm.height = 818;
+    let instrucaoUm = game.add.image(150-fatorFonte*5,150-fatorFonte*5,"instrucoes");
+    instrucaoUm.width = 1590+fatorFonte*10;
+    instrucaoUm.height = 818+fatorFonte*5;
     interfaceAtual.add(instrucaoUm);
     let tituloInstrucao  = game.add.text(650,150,"INSTRUKCIOJ");
     tituloInstrucao.font = "Luckiest Guy";
@@ -698,31 +700,35 @@ function instrucao() {
     tituloInstrucao.strokeThickness = 10;
     tituloInstrucao.fontWeight = 100;
     compInstrucao.add(tituloInstrucao);
-    let btFechar = game.add.button(1585,150,"botoes",fechar,this,11,11,10);
-    btFechar.width = 144;
-    btFechar.height = 155;
+    let btFechar = game.add.button(1585+fatorFonte*2,150-fatorFonte*5,"botoes",fechar,this,11,11,10);
+    btFechar.width = 144+fatorFonte*5;
+    btFechar.height = 155+fatorFonte*5;
     compInstrucao.add(instrucaoUm);
     compInstrucao.add(btFechar);
     switch(controladorAtt){
         case 1:
-          let texto1 = game.add.text(450,400,"Os priminhos girinos de Floppy são girinos muito brincalhões,\nmas bagunçaram a casa toda e se sujaramde tinta.\nSão muitos girinos de muitas cores, será que\nvocê consegue pegar todos? Clique com o mouse sobre o\ngirino da cor certa.\n\nCheque a revisão para descobrir de que cor eles se pintaram!");
+          let texto1 = game.add.text(370,400,"Os priminhos girinos de Floppy são girinos muito brincalhões,\nmas bagunçaram a casa toda e se sujaram de tinta.\nSão muitos girinos de muitas cores, será que\nvocê consegue pegar todos? Clique com o mouse sobre o\ngirino da cor certa.\n\nCheque a revisão para descobrir de que cor eles se pintaram!");
           compInstrucao.add(texto1);
           texto1.font = "Montserrat";
+          texto1.fontSize = 30 + fatorFonte;
         break;
         case 2:
-          let texto2 = game.add.text(450,400,"Agora que você arrumou os priminhos, hora de fazer uma brincadeira\nmais quietinha. Você e Lolô vão ensinar as partes da casa e seus\nmóveis para os priminhos de Floppy, usando uma casinha de bonecas.\n\nCheque a revisão para verificar se está tudo correto!");
+          let texto2 = game.add.text(370,400,"Agora que você arrumou os priminhos, hora de fazer uma brincadeira\nmais quietinha. Você e Lolô vão ensinar as partes da casa e seus\nmóveis para os priminhos de Floppy, usando uma casinha de bonecas.\n\nCheque a revisão para verificar se está tudo correto!");
           compInstrucao.add(texto2);
           texto2.font = "Montserrat";
+          texto2.fontSize = 30 + fatorFonte;
         break;
         case 3:
-          let texto3 = game.add.text(450,400,"Vamos nos preparar para a festa! Temos um número\ncerto de cada item para coletar. Você consegue\nlembrar de todos? Cuidado para não pegar os itens\nfora de ordem, hein?\n\nCheque a revisão para verificar se está tudo correto!");
+          let texto3 = game.add.text(370,400,"Vamos nos preparar para a festa! Temos um número\ncerto de cada item para coletar. Você consegue\nlembrar de todos? Cuidado para não pegar os itens\nfora de ordem, hein?\n\nCheque a revisão para verificar se está tudo correto!");
           compInstrucao.add(texto3);
           texto3.font = "Montserrat";
+          texto3.fontSize = 30 + fatorFonte;
         break;
         case 4:
-          let texto4 = game.add.text(450,400,"Ih! Ainda tem mais coisa pra pegar. Mas o estoque acabou. Temos\nque ir até o galpão, que está todo bagunçado, e procurar os itens\nque faltam.\n\nVocê consegue enxergar os itens que faltam? Basta clicar nos itens\nda lista da revisão e arrastá-los para a sacola.\n\nNão esqueça de checar a revisão para ver o que falta!");
+          let texto4 = game.add.text(370,400,"Ih! Ainda tem mais coisa pra pegar. Mas o estoque acabou.\nTemos que ir até o galpão, que está todo bagunçado, e procurar os itens\nque faltam.\n\nVocê consegue enxergar os itens que faltam? Basta clicar nos itens\nda lista da revisão e arrastá-los para a sacola.\n\nNão esqueça de checar a revisão para ver o que falta!");
           compInstrucao.add(texto4);
           texto4.font = "Montserrat";
+          texto4.fontSize = 30 + fatorFonte;
         break;
     }
 
@@ -734,19 +740,19 @@ function instrucao() {
 function janelaConfirmacao1(){
   if(estaNoJogo){
     let compConfirmacao = new Phaser.ArraySet();
-    let janela = game.add.image(530,300,"janelaconfirmacao");
-    janela.width = 970;
-    janela.height = 516;
-    let botaoverde = game.add.button(1050,650,"botoes",confirmar,this,7,7,6);
-    botaoverde.width = 100;
-    botaoverde.height = 100;
-    let botaovermelho = game.add.button(850,650,"botoes",fechar,this,11,11,10);
-    botaovermelho.width = 100;
-    botaovermelho.height = 100;
+    let janela = game.add.image(530-fatorFonte*5,300-fatorFonte*5,"janelaconfirmacao");
+    janela.width = 970+fatorFonte*10;
+    janela.height = 516+fatorFonte*5;
+    let botaoverde = game.add.button(1050-fatorFonte*5,650-fatorFonte*5,"botoes",confirmar,this,7,7,6);
+    botaoverde.width = 100+fatorFonte*10;
+    botaoverde.height = 100+fatorFonte*10;
+    let botaovermelho = game.add.button(850-fatorFonte*5,650-fatorFonte*5,"botoes",fechar,this,11,11,10);
+    botaovermelho.width = 100+fatorFonte*10;
+    botaovermelho.height = 100+fatorFonte*10;
     compConfirmacao.add(janela);
     compConfirmacao.add(botaoverde);
     compConfirmacao.add(botaovermelho);
-    let tituloConfimarcao = game.add.text(670,400,"TEM CERTEZA QUE DESEJA SAIR?");
+    let tituloConfimarcao = game.add.text(670-fatorFonte*5,400-fatorFonte*5,"TEM CERTEZA QUE DESEJA SAIR?");
     tituloConfimarcao.font = "Luckiest Guy";
     tituloConfimarcao.fontSize = 50 + fatorFonte;
     tituloConfimarcao.stroke = "#f15a24";
@@ -754,7 +760,7 @@ function janelaConfirmacao1(){
     tituloConfimarcao.strokeThickness = 10;
     tituloConfimarcao.fontWeight = 100;
     compConfirmacao.add(tituloConfimarcao);
-    let textoConfirmacao = game.add.text(740,500,"Seu progresso será perdido.");
+    let textoConfirmacao = game.add.text(740-fatorFonte*5,500-fatorFonte*5,"Seu progresso será perdido.");
     textoConfirmacao.font = "Montserrat";
     textoConfirmacao.fontSize = 40 + fatorFonte;
     textoConfirmacao.fill = "#318961";
@@ -774,19 +780,19 @@ function janelaConfirmacao1(){
 function janelaConfirmacao2(){
   if(estaNoJogo){
     let compConfirmacao = new Phaser.ArraySet();
-    let janela = game.add.image(530,300,"janelaconfirmacao");
-    janela.width = 970;
-    janela.height = 516;
-    let botaoverde = game.add.button(1050,650,"botoes",confirmar,this,7,7,6);
-    botaoverde.width = 100;
-    botaoverde.height = 100;
-    let botaovermelho = game.add.button(850,650,"botoes",fechar,this,11,11,10);
-    botaovermelho.width = 100;
-    botaovermelho.height = 100;
+    let janela = game.add.image(530-fatorFonte*5,300-fatorFonte*5,"janelaconfirmacao");
+    janela.width = 970+fatorFonte*10;
+    janela.height = 516+fatorFonte*5;
+    let botaoverde = game.add.button(1050-fatorFonte*5,650-fatorFonte*5,"botoes",confirmar,this,7,7,6);
+    botaoverde.width = 100+fatorFonte*10;
+    botaoverde.height = 100+fatorFonte*10;
+    let botaovermelho = game.add.button(850-fatorFonte*5,650-fatorFonte*5,"botoes",fechar,this,11,11,10);
+    botaovermelho.width = 100+fatorFonte*10;
+    botaovermelho.height = 100+fatorFonte*10;
     compConfirmacao.add(janela);
     compConfirmacao.add(botaoverde);
     compConfirmacao.add(botaovermelho);
-    let tituloConfimarcao = game.add.text(670,400,"TEM CERTEZA QUE DESEJA SAIR?");
+    let tituloConfimarcao = game.add.text(670-fatorFonte*5,400-fatorFonte*5,"TEM CERTEZA QUE DESEJA SAIR?");
     tituloConfimarcao.font = "Luckiest Guy";
     tituloConfimarcao.fontSize = 50 + fatorFonte;
     tituloConfimarcao.stroke = "#f15a24";
@@ -794,7 +800,7 @@ function janelaConfirmacao2(){
     tituloConfimarcao.strokeThickness = 10;
     tituloConfimarcao.fontWeight = 100;
     compConfirmacao.add(tituloConfimarcao);
-    let textoConfirmacao = game.add.text(740,500,"Seu progresso será perdido.");
+    let textoConfirmacao = game.add.text(740-fatorFonte*5,500-fatorFonte*5,"Seu progresso será perdido.");
     textoConfirmacao.font = "Montserrat";
     textoConfirmacao.fontSize = 40 + fatorFonte;
     textoConfirmacao.fill = "#318961";
@@ -880,11 +886,14 @@ function relogio(){
 }
 
 function aumentarFonte(){
-  fatorFonte+=2;
+  if (fatorFonte<8){
+    fatorFonte+=2;
+  }
   textoExemplo.fontSize = 60 + fatorFonte;
 }
 
 function diminuirFonte(){
-  fatorFonte-=2;
+  if (fatorFonte>0)
+    fatorFonte-=2;
   textoExemplo.fontSize = 60 + fatorFonte;
 }

@@ -212,10 +212,18 @@ function terminarJogoQuatro(){
     botaoConclusao2 = game.add.button(1200,700,"botoes",level2,this,3,3,2);
     botaoConclusao2.width = 180;
     botaoConclusao2.height = 200;
+    let  tituloParabens = game.add.text(670,160,"GRATULOJN");
+    tituloParabens.font = "Luckiest Guy";
+    tituloParabens.fontSize = 110 + fatorFonte;
+    tituloParabens.stroke = "#f7931e";
+    tituloParabens.fill = "#ffee73";
+    tituloParabens.strokeThickness = 10;
+    tituloParabens.fontWeight = 100;
     interfaceAtual.add(retangulo);
     interfaceAtual.add(janelaConclusao);
     interfaceAtual.add(botaoConclusao1);
     interfaceAtual.add(botaoConclusao2);
+    interfaceAtual.add(tituloParabens);
     encerrou = true;
     if(contadorMinutos<6){
       let estrela1 = game.add.sprite(500,100,"estrelas",0);
