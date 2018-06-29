@@ -66,7 +66,7 @@ function preload(){
   game.load.image("fundoLoja","imagens/puzzle3/fundoLoja.png");
   game.load.atlasJSONHash("coletaveis","imagens/puzzle3/coletaveis.png","imagens/puzzle3/coletaveis.json");
   game.load.spritesheet("estrelas","imagens/interface/estrelas.png",161,155);
-  game.load.atlasJSONHash("objetosPuzzle4","imagens/puzzle4/objetosPuzzle4.png","imagens/puzzle4/objetospuzzle4.json");
+  game.load.atlasJSONHash("objetosPuzzle4","imagens/puzzle4/objetospuzzle4.png","imagens/puzzle4/objetospuzzle4.json");
   game.load.image("fundoPuzzle4","imagens/puzzle4/Fundo.png");
   game.load.image("camada01","imagens/puzzle4/Camada1.png");
   game.load.image("camada02","imagens/puzzle4/camada2.png");
