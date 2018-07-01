@@ -1,6 +1,6 @@
 let camada01,camada02,camada03,camada04,camada05;
 let barbante,cadeira,chapeudefesta,confetes,copos,guardanapo,lona,pinceis,pratos,serpentina,talheres,tintas,bolsa2,fundo4;
-let todos,folha;
+let todos,folha,marcadagua;
 let botaoRevisaoQuatro,botaoPauseQuatro;
 let encerrou=false;
 function iniciaPuzzle4(){
@@ -114,7 +114,13 @@ function iniciaPuzzle4(){
   todos.add(guardanapo);
   todos.add(botaoRevisaoQuatro);
   todos.add(botaoPauseQuatro);
+  marcadagua = game.add.text(1300,20,"Mini-game em fase de testes");
+  marcadagua.font = "Montserrat";
+  marcadagua.fontSize = 35;
+  marcadagua.alpha = 0.5;
+  marcadagua.fill = "yellow";
   interfaceAtual.add(todos);
+  interfaceAtual.add(marcadagua);
   bolsa2 = game.add.sprite(900,500,"bolsa");
   bolsa2.visible = false;
   todos.add(bolsa2);

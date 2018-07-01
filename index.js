@@ -83,9 +83,11 @@ function preload(){
   game.load.atlasJSONHash("revisao2","imagens/interface/revisao2.png","imagens/interface/revisao2.json");
   game.load.image("revisaoPuzzle3","imagens/interface/revisaonumeros.png");
   game.load.image("revisaoPuzzle4","imagens/interface/imagemRevisao4.png");
+  game.load.image("revisaoPuzzle42","imagens/interface/imagemRevisao42.png");
   game.load.spritesheet("caras","imagens/interface/pontuacao.png",623,769);
   game.load.atlasJSONHash("contagem","imagens/interface/contagem.png","imagens/interface/contagem.json");
   game.load.image("quadrado","imagens/interface/quadrado.png");
+  game.load.image("coresDialogo1","imagens/puzzle1/cores.png");
 }
 function create(){
   game.scale.scaleMode = Phaser.ScaleManager.aspectRatio;
@@ -525,7 +527,7 @@ function level1(){
   imgfase01.width = 1920;
   imgfase01.height = 1080;
   interfaceAtual.add(imgfase01);
-  let botaoModulo1 = game.add.button(650,100,"levelbotao01",iniciaPuzzleUm,this,1,0,1);
+  let botaoModulo1 = game.add.button(650,100,"levelbotao01",dialogoUm,this,1,0,1);
   botaoModulo1.width = 312;
   botaoModulo1.height = 312;
   let botaoModulo2 = game.add.button(1050,400,"levelbotao02",iniciaPuzzleDois,this,1,0,1);
@@ -676,9 +678,26 @@ function popConf(){
         break;
         case 4:
         let imagemR4 = game.add.image(750,300,"revisaoPuzzle4");
+        let imagemR42 = game.add.image(750,300,"revisaoPuzzle42");
+        imagemR42.visible = false;
+        compRevisao.add(imagemR4);
         imagemR4.scale.x = 0.6;
         imagemR4.scale.y = 0.6;
-        compRevisao.add(imagemR4);
+        imagemR42.scale.x = 0.6;
+        imagemR42.scale.y = 0.6;
+        compRevisao.add(imagemR42);
+        let botaor1 = game.add.button(1420,740,"botoes",avancar2,this,3,3,2);
+        let botaor2 = game.add.button(480,740,"botoes",retroceder2,this,23,23,22);
+        compRevisao.add(botaor1);
+        compRevisao.add(botaor2);
+        function avancar2(){
+          imagemR42.visible = true;
+          imagemR4.visible = false;
+        }
+        function retroceder2(){
+          imagemR42.visible = false;
+          imagemR4.visible = true;
+        }
         break;
     }
     function fechar(){
