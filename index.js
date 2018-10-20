@@ -388,6 +388,7 @@ function dialogoInicial(){
   menuPersistente();
 }
 
+
 // Menu persistente
 function menuPersistente(){
   verificadorRetratil = false;
@@ -530,7 +531,7 @@ function level1(){
   let botaoModulo1 = game.add.button(650,100,"levelbotao01",dialogoUm,this,1,0,1);
   botaoModulo1.width = 312;
   botaoModulo1.height = 312;
-  let botaoModulo2 = game.add.button(1050,400,"levelbotao02",iniciaPuzzleDois,this,1,0,1);
+  let botaoModulo2 = game.add.button(1050,400,"levelbotao02",dialogoDois,this,1,0,1);
   botaoModulo2.width = 312;
   botaoModulo2.height = 312;
   interfaceAtual.add(botaoModulo1);
@@ -550,10 +551,10 @@ function level2(){
   botaoVoltar.width = 140;
   botaoVoltar.height = 120;
   interfaceAtual.add(botaoVoltar);
-  let botao1 = game.add.button(1150,200,"botoesloja",iniciaPuzzleTres,this,1,0,1);
+  let botao1 = game.add.button(1150,200,"botoesloja",dialogoTres,this,1,0,1);
   botao1.width = 150;
   botao1.height = 150;
-  let botao2 = game.add.button(1410,600,"botoesloja",iniciaPuzzle4,this,3,2,3);
+  let botao2 = game.add.button(1410,600,"botoesloja",dialogoQuatro,this,3,2,3);
   botao2.width = 150;
   botao2.height = 150;
   interfaceAtual.add(imgfase02);
