@@ -57,6 +57,7 @@ function preload(){
   game.load.image("revisao","imagens/interface/janelarevisao.png");
   game.load.image("cinza","imagens/sprites/cinza.png");
   game.load.image("cenariopuzzle02","imagens/puzzle2/cenariopuzzle02.png");
+  game.load.image("casinhaSemPlaca", "imagens/puzzle2/cenariosemplaca.jpeg");
   game.load.image("seletor","imagens/puzzle2/seletorcortado.png");
   game.load.image("cenariopuzzle01","imagens/puzzle1/cenariopuzzle1.png");
   game.load.image("cenarioloja","imagens/menufase2/cenarioloja.png");

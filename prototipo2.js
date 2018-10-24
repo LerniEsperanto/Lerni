@@ -674,19 +674,24 @@ function dialogoDois(){ // dialogo do segundo puzzle
   interfaceAtual.removeAll(true);
   let imgfase01 = game.add.image(0,0,"bgNarrativas");
   interfaceAtual.add(imgfase01);
-  let vetorTexto = [{nome:"Lôlô", texto:"Então! O que vamos precisar para deixar tudo com cara de festa ?"},{nome:"Floppy",texto:"Talvez uma decoraçãozinha..."},{nome:"Lôlô", texto:"Com certeza! Mas o quê, exatamente?"},{nome:"Floppy",texto:"Balões e serpentina, bolo e confete, de muitas cores!"},{nome:"Lôlô",texto:"Isso mesmo! Com várias cores, vamos deixar a festinha muito mais bonita!\nVamos aprender algumas delas…"},{nome:"Lolô",texto:"Em esperanto, o nome de muitas cores são muito parecidas com as de outras línguas.\n Como o inglês, por exemplo!"},{nome:"Lôlô",texto:"Isso acontece porque o esperanto tem palavras retiradas de outras línguas muito utilizadas!"},{nome:"Lôlô",texto:"Como é que se diz azul em inglês?"},{nome:"Floppy",texto:"Essa é fácil, azul é blue!"},{nome:"Lolô",texto:"Correto! E laranja em inglês?"},{nome:"Floppy",texto:"Orange!"},{nome:"Lolô",texto:"Perfeito ! Em esperanto essas duas cores são bem parecidas com o inglês.\n Quando queremos dizer a cor do céu, dizemos que sua cor é BLUA. Quando queremos dizer a cor da laranja, dizemos que ela é ORAN^GO."},{nome:"Floppy",texto:"Até que é fácil!"},{nome:"Jiló",texto:"Isso é meio estranho..."},{nome:"Lôlô",texto:"No esperanto também tem uma cor que se parece muito com uma do português.\n Querem adivinhar qual é?"},{nome:"Floppy",texto:"Já sei! Roxo!"},{nome:"Lôlô",texto:"Não, não. E você, Jiló? Consegue adivinhar?"},{nome:"Jiló",texto:"Hummm… Não sei… Amarelo?"},{nome:"Lôlô",texto:"Errado também. Aqui vai uma dica! Essa cor existe muito na natureza,\nprincipalmente nas árvores e outras plantinhas."},{nome:"Floppy e Jiló",texto:"VERDE!"},{nome:"Lôlô",texto:"Muito bem! A cor verde em esperanto é muito parecida com como dizemos na nossa língua. Ela só muda o finalzinho da palavra. Tiramos o E final e trocamos por um A. Então pra dizer a cor de uma planta, é só falar que ela é VERDA!"},{nome:"Floppy",texto:"Show! É muito fácil lembrar essa."},{nome:"Jiló",texto:"Eu ainda acho melhor o português."},{nome:"Floppy",texto:"Jiló, deixa de ser chato!"},{nome:"Lôlô",texto:"Calma, vocês dois. Prestem atenção! Agora vamos aprender algumas cores que vão ser um pouco difíceis de lembrar."},{nome:"Lôlô",texto:"De que cor são as nuvens?"},{nome:"Jiló",texto:"São brancas, ué."},{nome:"Lôlô",texto:"E as nuvens de chuva?"},{nome:"Floppy",texto:"Ah, essas são cinza!"},{nome:"Lôlô",texto:"Sim ! Em esperanto, a cor das nuvens brancas é BLANKA e das nuvens cinza, GRIZA."},{nome:"Lôlô",texto:"Quando você quiser dizer a cor do tronco de uma árvore, é só dizer que sua cor é BRUNA. BRUNA significa marrom em esperanto!"},{nome:"Floppy",texto:"Lôlô, como eu digo que uma maçã é vermelha?"},{nome:"Lôlô",texto:"Ótima pergunta Floppy ! É só dizer que sua cor é RU^GA ! Ru^ga significa vermelho, assim como a maçã."},{nome:"Lôlô",texto:"Para dizer que o sol é amarelo, é só dizer que é FLAVA. Para uma flor rosa, se diz ROZKOLORA. Se a flor é roxa dizemos, PURPURA !"},{nome:"Jiló",texto:"E aquelas formiguinhas pretas?"},{nome:"Lôlô",texto:"Ah meu caro Jiló, preto em esperanto se chama NIGRA. A cor daquelas formiguinhas é nigra. Então, entenderam como se fala as cores?"},{nome:"Floppy e Jiló",texto:"SIM!"},{nome:"Floppy e Jiló",texto:"Algumas são difíceis de lembrar. Espero conseguir lembrar delas…"},{nome:"Mãe do Floppy",texto:"Meninos vocês viram o Luquinhas e as outras crianças?"},{nome:"Mãe do Floppy",texto:"Não."},{nome:"Mãe do Floppy",texto:"Eles estavam brincando pela casa e encontraram os baldes de tinta que usamos para colorir algumas coisas na festa. Agora eles estão cobertos de tinta e não querem tomar banho! Desde cedo que eles estão fugindo de mim porque não querem ir se arrumar para a festa! Só querem saber de brincar! Agora vou ter que sair para resolver algumas coisas antes da festa e eu não sei mais o que fazer. Vocês podem me ajudar a pegar eles?"},{nome:"Lôlô",texto:" Claro tia, pode deixar que nós vamos pegar esses travessos!"},{nome:"Floppy e Jiló",texto:"SIM!"},{nome:"Mãe do Jiló",texto:"Muito obrigada meninos, vou ter que sair agora mas as crianças estarão esperando por vocês."},{nome:"Lôlô",texto:"Muito bem, a tia disse que os pequenos estão todos sujos de tinta e que precisamos pegá-los para que se ajeitem para a festa."}];
+  let vetorTexto = [{nome:"Floppy", texto:" Mamãe, conseguimos!"},{nome:"Mãe do Floppy",texto:"Meninos! Que bom que vocês conseguiram, esses meninos estavam me deixando louca! Agora tem mais um probleminha..."},{nome:"Lôlô", texto:"Qual o problema tia?"},{nome:"Mãe do Floppy",texto:" Eu fui ajeitar o bolo e quando virava pro lado tinha alguma coisa faltando!"},{nome:"Jiló",texto:"Por falar neles…"},{nome:"Primos",texto:"Tio Jiló! Tio Jiló! Conta uma história pra gente?"},{nome:"Jiló",texto:"Aaahhhh!"},{nome:"Mãe do Floppy",texto:"Oh! Isso foi o Jiló ? Parece que eles gostaram de você Jiló!"},{nome:"Jiló",texto:"Socorro!"},{nome:"Mãe do Floppy",texto:"Vocês podem distrair eles para que não baguncem mais nada?"},{nome:"Lolô",texto:"Claro! Vamos pensar em algo."},{nome:"Mãe do Floppy",texto:"Muito obrigada mesmo!"},{nome:"Floppy",texto:"E agora, como vamos fazer com que eles fiquem quietinhos?"},{nome:"Lôlô",texto:"Estou pensando em um plano…"},{nome:"Jiló",texto:"Podem parar de conversar e podem me dar uma ajuda aqui!?"},{nome:"Floppy",texto:"Ok Jiló, você vai ser a isca dessa vez!"},{nome:"Jiló",texto:"Quêêêêêêêêêêêê?"},{nome:"Lôlô",texto:"Não é isso Floppy!"},{nome:"Lôlô",texto:"Crianças, quem quer aprender uma coisa legal?"},{nome:"Primos",texto:"EU!"},{nome:"Lôlô",texto:"Vamos aprender um idioma bem legal e divertido na casinha de bonecas. Vamos lá!"},{nome:"Lôlô",texto:"Para começar vamos aprender como os cômodos se chamam. Onde é que a gente passa antes de entrar na casa?"},{nome:"Primos",texto:"Pelo jardim ué."},{nome:"Lôlô",texto:"O jardim em esperanto se chama GARDENO, é bem parecido com a palavra em inglês GARDEN."},{nome:"Primos",texto:"OOOH…"},{nome:"Lôlô",texto:"Ok, quando a gente entra em casa e limpa os pés, onde a gente chega?"},{nome:"Floppy",texto:"Essa eu sei! É a sala!"},{nome:"Lôlô",texto:"Muito bem Floppy, a sala se chama SALONO, é bem fácil de lembrar, porque é só pegar SAL e adicionar ONO."},{nome:"Primos",texto:"Hahahaha"},{nome:"Lôlô",texto:"E quando a gente tá com fome e nossa mãe chama pro almoço para onde a gente vai?"},{nome:"Primos",texto:"Para a cozinha!"},{nome:"Jiló",texto:"Até eu tô entendendo agora."},{nome:"Lôlô",texto:"Quando a gente fala da cozinha é um pouco mais difícil, chamamos de  KUIREJO."},{nome:"Lôlô",texto:"Estamos quase terminando, quando vamos escovar os dentes vamos para BAN^CAMBRO, cuidado para não confundir com a cozinha."},{nome:"Floppy",texto:"E o quarto?"},{nome:"Lôlô",texto:"Quando vamos dormir vamos para LA LIT^CAMBRO e assim se chamam os cômodos."},{nome:"Primos",texto:"E as coisinhas que a gente bota nos cômodos, como chama?"},{nome:"Lôlô",texto:" Para fazer isso que tal a gente montar a casinha? Desse jeito eu vou falando o que cada coisa é."},{nome:"Primos",texto:"Eba!"}];
   let floppy = game.add.image(100,300,"floppy",0);
   interfaceAtual.add(floppy);
   let lolo = game.add.image(1000,300,"lolo",2);
   interfaceAtual.add(lolo);
+  lolo.visible = false;
   let jilo = game.add.image(500,300,"jilo",0);
   interfaceAtual.add(jilo);
   jilo.visible = false;
-  let cores = game.add.image(1300,100,"coresDialogo1");
-  cores.scale.x = 0.5;
-  cores.scale.y = 0.5;
-  cores.visible = false;
-  interfaceAtual.add(cores);
+  let spritePrimo = game.add.image(100,500,"girinos",0);
+  spritePrimo.visible = false;
+  let spritePrimo2 = game.add.image(100,600,"girinos",3);
+  spritePrimo2.visible = false;
+  let casinhaVazia = game.add.image(1300,100,"casinhaSemPlaca");
+  casinhaVazia.scale.x = 0.5;
+  casinhaVazia.scale.y = 0.5;
+  casinhaVazia.visible = false;
+  interfaceAtual.add(casinhaVazia);
   let balaoDialogo = game.add.image(400-fatorFonte*20,700,"dialogo");
   balaoDialogo.width = 1269+fatorFonte*20;
   balaoDialogo.height = 268;
@@ -733,11 +738,12 @@ function dialogoDois(){ // dialogo do segundo puzzle
     switch(controlaTexto){
       case 0:
         floppy.frame = 0;
-        lolo.frame = 2;
+        lolo.visible = false;
+        jilo.visible = false;
       break;
       case 1:
-        jilo.visible = true;
-        jilo.frame = 7;
+        jilo.visible = false;
+        lolo.visible = true;
       break;
       case 2:
         lolo.frame = 2;
@@ -745,159 +751,163 @@ function dialogoDois(){ // dialogo do segundo puzzle
       case 3:
         floppy.frame = 0;
         lolo.frame = 2;
+        jilo.visible = false;
       break;
       case 4:
+        jilo.visible = true;
+        jilo.frame = 7;
         lolo.frame = 3;
         floppy.frame = 0;
       break;
       case 5:
-        lolo.frame = 2;
+        jilo.frame = 7;
       break;
       case 6:
-        cores.visible = false;
-        lolo.frame = 2;
+        jilo.frame = 3;
       break;
       case 7:
-        cores.visible = true;
-        lolo.frame = 2;
+        spritePrimo.visible = true;
+        spritePrimo2.visible = true;
+        let efeitoQueda = game.add.tween(jilo);
+        let efeitoLolo = game.add.tween(lolo);
+        let efeitoPrimos = game.add.tween(spritePrimo);
+        efeitoPrimos.to({x:800},300,Phaser.Easing.Cubic.In,true,1,0,false);
+        efeitoLolo.to({x:1200},300,Phaser.Easing.Cubic.In,true,1,0,false);
+        let efeitoPrimos2 = game.add.tween(spritePrimo2);
+        efeitoPrimos2.to({x:850},300,Phaser.Easing.Cubic.In,true,1,0,false);
+        efeitoQueda.to({angle:90, x:800, y:800},500,Phaser.Easing.Bounce.Out,true,150,0,false);
+        jilo.anchor.setTo(0.5,0.5);
+        jilo.frame = 3;
       break;
       case 8:
-        lolo.frame = 2;
-        jilo.frame = 0;
+        jilo.frame = 3;
+        lolo.frame = 3;
       break;
       case 9:
-        lolo.frame = 2;
-        floppy.frame = 0;
+        lolo.frame = 3;
       break;
       case 10:
         floppy.frame = 0;
       break;
       case 11:
-        floppy.frame = 0;
+        floppy.frame = 1;
+        lolo.frame = 3;
       break;
       case 12:
         lolo.frame = 2;
-        floppy.frame = 6;
-        jilo.frame = 0;
       break;
       case 13:
-        jilo.frame = 7;
-      break;
-      case 14:
-        lolo.frame = 3;
-      break;
-      case 15:
-        floppy.frame = 0;
-      break;
-      case 16:
-        lolo.frame = 3;
-        jilo.frame = 7;
-      break;
-      case 17:
         jilo.frame = 3;
       break;
+      case 14:
+        floppy.frame = 0;
+      break;
+      case 15:
+        jilo.frame = 3;
+      break;
+      case 16:
+        lolo.frame = 4;
+        jilo.frame = 3;
+      break;
+      case 17:
+        lolo.frame = 6;
+        let efeitoQueda2 = game.add.tween(jilo);
+        let efeitoLolo2 = game.add.tween(lolo);
+        efeitoLolo2.to({x:1000},1000,Phaser.Easing.Cubic.In,true,1,0,false);
+        efeitoQueda2.to({angle:0, x:800, y:700},1000,Phaser.Easing.Cubic.In,true,100,0,false);
+      break;
       case 18:
-        lolo.frame = 3;
+        lolo.frame = 6;
         jilo.frame = 3;
       break;
       case 19:
-        jilo.frame = 0;
+        casinhaVazia.visible = false;
+        jilo.frame = 3;
         floppy.frame = 0;
       break;
       case 20:
+        casinhaVazia.visible = true;
         floppy.frame = 0;
-        lolo.frame = 3;
+        lolo.frame = 5;
       break;
       case 21:
-        lolo.frame = 3;
+        lolo.frame = 5;
       break;
       case 22:
-        floppy.frame = 0;
-        jilo.frame = 7;
+        floppy.frame = 3;
+        lolo.frame = 5;
       break;
       case 23:
-        floppy.frame = 0;
-        lolo.frame = 3;
+        floppy.frame = 3;
+        lolo.frame = 5;
       break;
       case 24:
-        lolo.frame = 4;
+        lolo.frame = 5;
       break;
       case 25:
-        lolo.frame = 4;
-        jilo.frame = 7;
+        floppy.frame = 0;
+        jilo.frame = 3;
       break;
       case 26:
-        jilo.frame = 4;
+        jilo.frame = 3;
       break;
       case 27:
-        lolo.frame = 2;
+        lolo.frame = 5;
+        floppy.frame = 0;
+        jilo.frame = 3;
       break;
       case 28:
-        floppy.frame = 0;
+        floppy.frame = 3;
+        jilo.frame = 3;
       break;
       case 29:
-        lolo.frame = 3;
+        lolo.frame = 5;
+        jilo.frame = 0;
       break;
       case 30:
-        lolo.frame = 0;
+        lolo.frame = 5;
       break;
       case 31:
-        lolo.frame = 3;
+        lolo.frame = 5;
       break;
       case 32:
-        lolo.frame = 3;
+        lolo.frame = 5;
         floppy.frame = 0;
       break;
       case 33:
-        floppy.frame = 5;
+        floppy.frame = 0;
       break;
       case 34:
-        lolo.frame = 3;
+        lolo.frame = 5;
       break;
       case 35:
-        lolo.frame = 3;
-        jilo.frame = 2;
+        lolo.frame = 5;
+        jilo.frame = 0;
       break;
       case 36:
-        jilo.frame = 1;
-        lolo.frame = 3;
+        jilo.frame = 0;
+        lolo.frame = 5;
       break;
       case 37:
-        lolo.frame = 0;
-        cores.visible = true;
+        lolo.frame = 5;
+        casinhaVazia.visible = true;
       break;
       case 38:
-        cores.visible = false;
-        floppy.frame = 0;
-        jilo.frame = 3;
+        casinhaVazia.visible = false;
       break;
       case 39:
-        floppy.frame = 2;
+        floppy.frame = 0;
       break;
       case 40:
-        floppy.frame = 2;
+        floppy.frame = 0;
         jilo.frame = 3;
       break;
       case 41:
-        floppy.frame = 6;
-        lolo.frame = 0;
+        floppy.frame = 3;
+        lolo.frame = 5;
         jilo.frame = 4;
       break;
       case 42:
-      break;
-      case 43:
-        lolo.frame = 0;
-        jilo.frame = 4;
-      break;
-      case 44:
-        floppy.frame = 0;
-        jilo.frame = 0;
-      break;
-      case 45:
-        lolo.frame = 0;
-      break;
-      case 46:
-        lolo.frame = 3;
       break;
     }
   }
