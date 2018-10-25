@@ -687,6 +687,8 @@ function dialogoDois(){ // dialogo do segundo puzzle
   spritePrimo.visible = false;
   let spritePrimo2 = game.add.image(100,600,"girinos",3);
   spritePrimo2.visible = false;
+  interfaceAtual.add(spritePrimo);
+  interfaceAtual.add(spritePrimo2);
   let casinhaVazia = game.add.image(1300,100,"casinhaSemPlaca");
   casinhaVazia.scale.x = 0.5;
   casinhaVazia.scale.y = 0.5;

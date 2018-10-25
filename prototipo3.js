@@ -327,16 +327,16 @@ function geraExtenso(numero){
 function dialogoTres(){ // dialogo do terceiro puzzle
   let controlaTexto = 0;
   interfaceAtual.removeAll(true);
-  let imgfase01 = game.add.image(0,0,"bgNarrativas");
+  let imgfase01 = game.add.image(0,0,"backgroundlevels");
   interfaceAtual.add(imgfase01);
-  let vetorTexto = [{nome:"Lôlô", texto:"Então! O que vamos precisar para deixar tudo com cara de festa ?"},{nome:"Floppy",texto:"Talvez uma decoraçãozinha..."},{nome:"Lôlô", texto:"Com certeza! Mas o quê, exatamente?"},{nome:"Floppy",texto:"Balões e serpentina, bolo e confete, de muitas cores!"},{nome:"Lôlô",texto:"Isso mesmo! Com várias cores, vamos deixar a festinha muito mais bonita!\nVamos aprender algumas delas…"},{nome:"Lolô",texto:"Em esperanto, o nome de muitas cores são muito parecidas com as de outras línguas.\n Como o inglês, por exemplo!"},{nome:"Lôlô",texto:"Isso acontece porque o esperanto tem palavras retiradas de outras línguas muito utilizadas!"},{nome:"Lôlô",texto:"Como é que se diz azul em inglês?"},{nome:"Floppy",texto:"Essa é fácil, azul é blue!"},{nome:"Lolô",texto:"Correto! E laranja em inglês?"},{nome:"Floppy",texto:"Orange!"},{nome:"Lolô",texto:"Perfeito ! Em esperanto essas duas cores são bem parecidas com o inglês.\n Quando queremos dizer a cor do céu, dizemos que sua cor é BLUA. Quando queremos dizer a cor da laranja, dizemos que ela é ORAN^GO."},{nome:"Floppy",texto:"Até que é fácil!"},{nome:"Jiló",texto:"Isso é meio estranho..."},{nome:"Lôlô",texto:"No esperanto também tem uma cor que se parece muito com uma do português.\n Querem adivinhar qual é?"},{nome:"Floppy",texto:"Já sei! Roxo!"},{nome:"Lôlô",texto:"Não, não. E você, Jiló? Consegue adivinhar?"},{nome:"Jiló",texto:"Hummm… Não sei… Amarelo?"},{nome:"Lôlô",texto:"Errado também. Aqui vai uma dica! Essa cor existe muito na natureza,\nprincipalmente nas árvores e outras plantinhas."},{nome:"Floppy e Jiló",texto:"VERDE!"},{nome:"Lôlô",texto:"Muito bem! A cor verde em esperanto é muito parecida com como dizemos na nossa língua. Ela só muda o finalzinho da palavra. Tiramos o E final e trocamos por um A. Então pra dizer a cor de uma planta, é só falar que ela é VERDA!"},{nome:"Floppy",texto:"Show! É muito fácil lembrar essa."},{nome:"Jiló",texto:"Eu ainda acho melhor o português."},{nome:"Floppy",texto:"Jiló, deixa de ser chato!"},{nome:"Lôlô",texto:"Calma, vocês dois. Prestem atenção! Agora vamos aprender algumas cores que vão ser um pouco difíceis de lembrar."},{nome:"Lôlô",texto:"De que cor são as nuvens?"},{nome:"Jiló",texto:"São brancas, ué."},{nome:"Lôlô",texto:"E as nuvens de chuva?"},{nome:"Floppy",texto:"Ah, essas são cinza!"},{nome:"Lôlô",texto:"Sim ! Em esperanto, a cor das nuvens brancas é BLANKA e das nuvens cinza, GRIZA."},{nome:"Lôlô",texto:"Quando você quiser dizer a cor do tronco de uma árvore, é só dizer que sua cor é BRUNA. BRUNA significa marrom em esperanto!"},{nome:"Floppy",texto:"Lôlô, como eu digo que uma maçã é vermelha?"},{nome:"Lôlô",texto:"Ótima pergunta Floppy ! É só dizer que sua cor é RU^GA ! Ru^ga significa vermelho, assim como a maçã."},{nome:"Lôlô",texto:"Para dizer que o sol é amarelo, é só dizer que é FLAVA. Para uma flor rosa, se diz ROZKOLORA. Se a flor é roxa dizemos, PURPURA !"},{nome:"Jiló",texto:"E aquelas formiguinhas pretas?"},{nome:"Lôlô",texto:"Ah meu caro Jiló, preto em esperanto se chama NIGRA. A cor daquelas formiguinhas é nigra. Então, entenderam como se fala as cores?"},{nome:"Floppy e Jiló",texto:"SIM!"},{nome:"Floppy e Jiló",texto:"Algumas são difíceis de lembrar. Espero conseguir lembrar delas…"},{nome:"Mãe do Floppy",texto:"Meninos vocês viram o Luquinhas e as outras crianças?"},{nome:"Mãe do Floppy",texto:"Não."},{nome:"Mãe do Floppy",texto:"Eles estavam brincando pela casa e encontraram os baldes de tinta que usamos para colorir algumas coisas na festa. Agora eles estão cobertos de tinta e não querem tomar banho! Desde cedo que eles estão fugindo de mim porque não querem ir se arrumar para a festa! Só querem saber de brincar! Agora vou ter que sair para resolver algumas coisas antes da festa e eu não sei mais o que fazer. Vocês podem me ajudar a pegar eles?"},{nome:"Lôlô",texto:" Claro tia, pode deixar que nós vamos pegar esses travessos!"},{nome:"Floppy e Jiló",texto:"SIM!"},{nome:"Mãe do Jiló",texto:"Muito obrigada meninos, vou ter que sair agora mas as crianças estarão esperando por vocês."},{nome:"Lôlô",texto:"Muito bem, a tia disse que os pequenos estão todos sujos de tinta e que precisamos pegá-los para que se ajeitem para a festa."}];
-  let floppy = game.add.image(100,300,"floppy",0);
+  let vetorTexto = [{nome:"Floppy", texto:"Vocês se lembram onde é a loja de festas? Eu meio que me perdi…"},{nome:"Jiló",texto:"Acho que era por aqui, não talvez por ali…"},{nome:"Lôlô", texto:"Vamos lá pessoal! Vocês disseram que sabiam!"},{nome:"Floppy",texto:"Ah sim! É só atravessamos o parque que estaremos ali em pouco tempo!"},{nome:"Lôlô",texto:"Muito bem! Todo mundo se lembra do que vamos comprar?"},{nome:"Floppy",texto:" Bem… não tudo."},{nome:"Lôlô",texto:"Então vamos revisar enquanto atravessamos o parque."},{nome:"Lôlô",texto:"Para começar, temos os balões. Balões em esperanto são chamados BALONETOJ."},{nome:"Jiló",texto:"Ué, não seria mais fácil ser chamado de BALONETO?"},{nome:"Lolô",texto:"Foi muito bom você perguntar isso jiló. Quando a gente fala que tem mais de uma coisa, colocamos um J no final da palavra. Então fica BALONETOJ."},{nome:"Jiló",texto:"OHH…"},{nome:"Lolô",texto:"Sempre lembre-se também que os substantivos terminam sempre em O."},{nome:"Floppy",texto:"Certo, o que mais vamos comprar?"},{nome:"Lôlô",texto:"Vamos comprar copos, que em esperanto se chama GLASO."},{nome:"Jiló",texto:"Que mais de um é GLASOJ."},{nome:"Floppy",texto:"Uau Jiló, você está aprendendo rápido."},{nome:"Lôlô",texto:"Vamos precisar de outras coisas também, o que mais?"},{nome:"Jiló",texto:"Bem, os convidados vão precisar comer também…"},{nome:"Lôlô",texto:"Aí vem os pratos e guardanapos. Os pratos se chamam TELERO, é bem fácil confundir com telefone. E os guardanapos são BU^STUKO, que usamos para limpar a boca."},{nome:"Floppy",texto:"Humm… o que mais?"},{nome:"Lôlô",texto:"Onde vamos colocar as lembrancinhas? Pra isso tem os PAKA^JOJ, os embrulhos."},{nome:"Floppy",texto:"Mas Lôlô, a gente precisa de coisas divertidas pra jogar na festa."},{nome:"Jiló",texto:"Desde que não seja confete, entra tudo no meu nariz."},{nome:"Lôlô",texto:"Ok, ok. Sem confete dessa vez. Vamos comprar então SERPENTO, PAPERA KUVO e RUBANDO. Na sequência: Serpentina, papel crepom e fita para amarrar as lembrancinhas."},{nome:"Jiló",texto:"Tudo bom e legal, mas qual vai ser a quantidade de tudo isso?"},{nome:"Floppy",texto:"Ops…"},{nome:"Lôlô",texto:"Para isso vamos aprender os números em esperanto. É muito fácil aprender veja só: Unu, du ,tri, kvar, kvin. Repita comigo."},{nome:"Floppy e Jiló",texto:"Unu, du, tri, kvar, kvin."},{nome:"Lôlô",texto:"Assim vocês acabaram de contar até cinco."},{nome:"Floppy e Jiló",texto:"Uau!"},{nome:"Lôlô",texto:"Agora vamos continuar até dez: Ses, sep,ok, na~u, dek."},{nome:"Floppy e Jiló",texto:"Ses, sep,ok, na~u, dek"},{nome:"Lôlô",texto:"Assim são os números até dez."},{nome:"Jiló",texto:"Mas e se for mais que dez?"},{nome:"Lôlô",texto:"Aí nós colocamos o dek seguido do número depois. Por exemplo, onze é dek unu."},{nome:"Floppy",texto:"E o vinte?"},{nome:"Lôlô",texto:" É bem fácil, veja só: o vinte é o du seguido do dek, assim é até o noventa, no resto é a mesma regra de antes. O vinte dois ficaria dudek du."},{nome:"Atendente",texto:"Desculpe meninos, mas vocês vão ter que se apressar, a loja vai fechar daqui a pouco."},{nome:"Floppy",texto:"Oh não!"},{nome:"Lôlô",texto:"Rápido! Peguem a lista e vamos nos apressar!"}];
+  let floppy = game.add.image(100,300,"floppy",2);
   interfaceAtual.add(floppy);
   let lolo = game.add.image(1000,300,"lolo",2);
   interfaceAtual.add(lolo);
-  let jilo = game.add.image(500,300,"jilo",0);
+  let jilo = game.add.image(500,300,"jilo",2);
   interfaceAtual.add(jilo);
-  jilo.visible = false;
+  jilo.visible = true;
   let cores = game.add.image(1300,100,"coresDialogo1");
   cores.scale.x = 0.5;
   cores.scale.y = 0.5;
@@ -387,45 +387,46 @@ function dialogoTres(){ // dialogo do terceiro puzzle
   function checaSprite(){ //expressões dos personagens
     switch(controlaTexto){
       case 0:
-        floppy.frame = 0;
+        floppy.frame = 2;
         lolo.frame = 2;
+        jilo.frame = 2;
       break;
       case 1:
         jilo.visible = true;
-        jilo.frame = 7;
+        jilo.frame = 3;
+        lolo.frame = 2;
       break;
       case 2:
-        lolo.frame = 2;
+        lolo.frame = 4;
       break;
       case 3:
         floppy.frame = 0;
-        lolo.frame = 2;
       break;
       case 4:
         lolo.frame = 3;
         floppy.frame = 0;
       break;
       case 5:
-        lolo.frame = 2;
+        floppy.frame = 2;
+        jilo.frame = 0;
       break;
       case 6:
-        cores.visible = false;
         lolo.frame = 2;
       break;
       case 7:
-        cores.visible = true;
         lolo.frame = 2;
       break;
       case 8:
-        lolo.frame = 2;
-        jilo.frame = 0;
+        jilo.frame = 3;
       break;
       case 9:
         lolo.frame = 2;
         floppy.frame = 0;
+        jilo.frame = 3;
       break;
       case 10:
         floppy.frame = 0;
+        jilo.frame = 0;
       break;
       case 11:
         floppy.frame = 0;
@@ -436,7 +437,7 @@ function dialogoTres(){ // dialogo do terceiro puzzle
         jilo.frame = 0;
       break;
       case 13:
-        jilo.frame = 7;
+        jilo.frame = 0;
       break;
       case 14:
         lolo.frame = 3;
@@ -446,7 +447,7 @@ function dialogoTres(){ // dialogo do terceiro puzzle
       break;
       case 16:
         lolo.frame = 3;
-        jilo.frame = 7;
+        jilo.frame = 0;
       break;
       case 17:
         jilo.frame = 3;
@@ -465,24 +466,26 @@ function dialogoTres(){ // dialogo do terceiro puzzle
       break;
       case 21:
         lolo.frame = 3;
+        jilo.frame = 0;
       break;
       case 22:
         floppy.frame = 0;
-        jilo.frame = 7;
+        jilo.frame = 1;
       break;
       case 23:
         floppy.frame = 0;
         lolo.frame = 3;
+        jilo.frame = 0;
       break;
       case 24:
-        lolo.frame = 4;
+        lolo.frame = 2;
       break;
       case 25:
-        lolo.frame = 4;
-        jilo.frame = 7;
+        lolo.frame = 2;
+        jilo.frame = 3;
       break;
       case 26:
-        jilo.frame = 4;
+        jilo.frame = 2;
       break;
       case 27:
         lolo.frame = 2;
@@ -491,20 +494,24 @@ function dialogoTres(){ // dialogo do terceiro puzzle
         floppy.frame = 0;
       break;
       case 29:
-        lolo.frame = 3;
+        lolo.frame = 1;
       break;
       case 30:
-        lolo.frame = 0;
+        lolo.frame = 1;
+        jilo.frame = 2;
       break;
       case 31:
-        lolo.frame = 3;
+        lolo.frame = 2;
+        jilo.frame = 0;
       break;
       case 32:
         lolo.frame = 3;
         floppy.frame = 0;
+        jilo.frame = 0;
       break;
       case 33:
         floppy.frame = 5;
+        jilo.frame = 2;
       break;
       case 34:
         lolo.frame = 3;
@@ -512,48 +519,31 @@ function dialogoTres(){ // dialogo do terceiro puzzle
       case 35:
         lolo.frame = 3;
         jilo.frame = 2;
+        imgfase01.alpha = 1;
+        imgfase01.loadTexture("backgroundlevels");
       break;
       case 36:
-        jilo.frame = 1;
+        imgfase01.alpha = 0;
+        imgfase01.loadTexture("cenarioloja");
+        let efeitoLoja = game.add.tween(imgfase01);
+        efeitoLoja.to({alpha:1},1000,"Linear",true);
+        let efeitoAndar1 = game.add.tween(jilo);
+        efeitoAndar1.to({x:500,y:350},150,"Linear",true,10,3,true);
+        let efeitoAndar2 = game.add.tween(lolo);
+        efeitoAndar2.to({x:1000,y:350},150,"Linear",true,10,3,true);
+        let efeitoAndar3 = game.add.tween(floppy);
+        efeitoAndar3.to({x:100,y:350},150,"Linear",true,10,3,true);
+        jilo.frame = 2;
         lolo.frame = 3;
       break;
       case 37:
         lolo.frame = 0;
-        cores.visible = true;
       break;
       case 38:
-        cores.visible = false;
         floppy.frame = 0;
         jilo.frame = 3;
       break;
-      case 39:
-        floppy.frame = 2;
-      break;
-      case 40:
-        floppy.frame = 2;
-        jilo.frame = 3;
-      break;
-      case 41:
-        floppy.frame = 6;
-        lolo.frame = 0;
-        jilo.frame = 4;
-      break;
-      case 42:
-      break;
-      case 43:
-        lolo.frame = 0;
-        jilo.frame = 4;
-      break;
-      case 44:
-        floppy.frame = 0;
-        jilo.frame = 0;
-      break;
-      case 45:
-        lolo.frame = 0;
-      break;
-      case 46:
-        lolo.frame = 3;
-      break;
+     
     }
   }
   menuPersistente();
