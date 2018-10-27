@@ -10,6 +10,7 @@ let botaoRevisaoTres, botaoPauseTres;
 let indicadorItens = [{nomeItem:"Pinhata", quantidade:1, pego:false},{nomeItem:"Sona skatolo", quantidade:2, pego:false},{nomeItem:"Buŝtukoj", quantidade:3, pego:false},{nomeItem:"Glasoj", quantidade:4, pego:false},{nomeItem:"Teleroj", quantidade:5, pego:false},{nomeItem:"Partio Ĉapelo", quantidade:6, pego:false},{nomeItem:"Partiaj glasoj", quantidade:7, pego:false},{nomeItem:"Partio Flagoj", quantidade:8, pego:false},{nomeItem:"Kandeloj", quantidade:9, pego:false},{nomeItem:"Balonetoj", quantidade:10, pego:false}];
 let escoreTres=0,exibeEscoreTres;
 let imagemItem,fundoItem;
+let pontuacaoPositiva2, pontuacaoNegativa2;
 function iniciaPuzzleTres(){
   interfaceAtual.removeAll(true);
   terminouTres = false;
@@ -51,9 +52,17 @@ function iniciaPuzzleTres(){
   botaoPauseTres = game.add.button(1770,250,"botoes",pause,this,17,17,16);
   botaoPauseTres.width = 130;
   botaoPauseTres.height = 136;
-  exibeEscoreTres = game.add.text(1000,100,"Pontos: "+escoreTres);
+  exibeEscoreTres = game.add.text(1280,100,"Pontos: "+escoreTres);
   exibeEscoreTres.font = "Luckiest Guy";
   exibeEscoreTres.fontSize = 36;
+  pontuacaoPositiva2 = game.add.text(1440+fatorFonte*10,100,"+100");
+  pontuacaoPositiva2.visible = false;
+  pontuacaoPositiva2.font = "Luckiest Guy";
+  pontuacaoPositiva2.fill = "#1a4c1c";
+  pontuacaoNegativa2 = game.add.text(1440+fatorFonte*10,100,"-50");
+  pontuacaoNegativa2.visible = false;
+  pontuacaoNegativa2.font = "Luckiest Guy";
+  pontuacaoNegativa2.fill = "#f44141";
   interfaceAtual.add(backgroundFundo);
   interfaceAtual.add(bolsa);
   interfaceAtual.add(itens);
@@ -183,7 +192,7 @@ function checaItem(sprites){
     if(sprites.controle==itemVigente){
       contPego++;
       escoreTres+=100;
-      atualizaPontos3();
+      incrementaPontuacao2();
       textoQtd.setText("Quantidade: "+geraExtenso(contPego)+"/"+geraExtenso(indicadorItens[itemVigente].quantidade));
       sprites.destroy();
       if(contPego == indicadorItens[itemVigente].quantidade){
@@ -210,7 +219,7 @@ function checaItem(sprites){
       if(escoreTres>50){
         escoreTres-=50;
       }
-      atualizaPontos3();
+      decrementaPontuacao2();
     }
   }
 }
@@ -547,4 +556,31 @@ function dialogoTres(){ // dialogo do terceiro puzzle
     }
   }
   menuPersistente();
+}
+
+
+function decrementaPontuacao2(){
+  function decrementoInvisivel(){
+    pontuacaoNegativa2.visible = false;
+  }
+  pontuacaoNegativa2.y = 150;
+  pontuacaoNegativa2.alpha = 1;
+  pontuacaoNegativa2.visible = true;
+  let efeitoNegativo = game.add.tween(pontuacaoNegativa2);
+  efeitoNegativo.to({y:50, alpha:0},500,"Linear",true);
+  efeitoNegativo.onComplete.add(decrementoInvisivel);
+  efeitoNegativo.onComplete.add(atualizaPontos3);
+}
+
+function incrementaPontuacao2(){
+  function incrementoInvisivel(){
+    pontuacaoPositiva2.visible = false;
+  }
+  pontuacaoPositiva2.y = 150;
+  pontuacaoPositiva2.alpha = 1;
+  pontuacaoPositiva2.visible = true;
+  let efeitoPositivo = game.add.tween(pontuacaoPositiva2);
+  efeitoPositivo.to({y:50, alpha:0},500,Phaser.Easing.Elastic.In,true);
+  efeitoPositivo.onComplete.add(incrementoInvisivel);
+  efeitoPositivo.onComplete.add(atualizaPontos3);
 }

@@ -9,6 +9,7 @@ let botaoPauseUm, botaoRevisaoUm;
 let quantidade = 0;
 let escore1 = 0;
 let exibeEscore;
+let pontuacaoPositiva, pontuacaoNegativa;
 function atualizaJogo1(){
   if(quantidade<15){
     if(contadorFase1<20)
@@ -217,13 +218,13 @@ function checaCor(sprite){
     controle = game.rnd.integerInRange(0,10);
     c.setText(exibeCor());
     escore1 += 100;
-    atualizaPontos1();
+    incrementaPontuacao1();
   }
   else{
     if(escore1>49){
       escore1-=50;
+      decrementaPontuacao1();
     }
-  atualizaPontos1();
   }
 }
 
@@ -391,11 +392,21 @@ function iniciaPuzzleUm(){
   exibeEscore = game.add.text(1200+fatorFonte*10,50,"Pontos: "+escore1);
   exibeEscore.font = "Luckiest Guy";
   exibeEscore.fontSize = 30+fatorFonte;
+  pontuacaoPositiva = game.add.text(1340+fatorFonte*10,100,"+100");
+  pontuacaoPositiva.visible = false;
+  pontuacaoPositiva.font = "Luckiest Guy";
+  pontuacaoPositiva.fill = "#1a4c1c";
+  pontuacaoNegativa = game.add.text(1340+fatorFonte*10,100,"-50");
+  pontuacaoNegativa.visible = false;
+  pontuacaoNegativa.font = "Luckiest Guy";
+  pontuacaoNegativa.fill = "#f44141";
   interfaceAtual.add(sapos);
   interfaceAtual.add(objetosCenario);
   interfaceAtual.add(tt);
   interfaceAtual.add(c);
   interfaceAtual.add(exibeEscore);
+  interfaceAtual.add(pontuacaoPositiva);
+  interfaceAtual.add(pontuacaoNegativa);
   controladorAtt = 1;
   menuPersistente();
   botaoRevisaoUm = game.add.button(1770,100,"botoes",popRevisao,this,25,25,24);
@@ -715,4 +726,30 @@ function dialogoUm(){ // dialogo do primeiro puzzle
     }
   }
   menuPersistente();
+}
+
+function decrementaPontuacao1(){
+  function decrementoInvisivel(){
+    pontuacaoNegativa.visible = false;
+  }
+  pontuacaoNegativa.y = 100;
+  pontuacaoNegativa.alpha = 1;
+  pontuacaoNegativa.visible = true;
+  let efeitoNegativo = game.add.tween(pontuacaoNegativa);
+  efeitoNegativo.to({y:50, alpha:0},500,"Linear",true);
+  efeitoNegativo.onComplete.add(decrementoInvisivel);
+  efeitoNegativo.onComplete.add(atualizaPontos1);
+}
+
+function incrementaPontuacao1(){
+  function incrementoInvisivel(){
+    pontuacaoPositiva.visible = false;
+  }
+  pontuacaoPositiva.y = 100;
+  pontuacaoPositiva.alpha = 1;
+  pontuacaoPositiva.visible = true;
+  let efeitoPositivo = game.add.tween(pontuacaoPositiva);
+  efeitoPositivo.to({y:50, alpha:0},500,Phaser.Easing.Elastic.In,true);
+  efeitoPositivo.onComplete.add(incrementoInvisivel);
+  efeitoPositivo.onComplete.add(atualizaPontos1);
 }
