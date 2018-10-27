@@ -692,6 +692,7 @@ function popConf(){
         let botaor2 = game.add.button(480,740,"botoes",retroceder2,this,23,23,22);
         compRevisao.add(botaor1);
         compRevisao.add(botaor2);
+        compRevisao.add(grifaNomes());
         function avancar2(){
           imagemR42.visible = true;
           imagemR4.visible = false;
