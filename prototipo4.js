@@ -273,7 +273,7 @@ function terminarJogoQuatro(){
 function dialogoQuatro(){ // dialogo do quarto puzzle
   let controlaTexto = 0;
   interfaceAtual.removeAll(true);
-  let imgfase01 = game.add.image(0,0,"bgNarrativas");
+  let imgfase01 = game.add.image(0,0,"backgroundlevels");
   interfaceAtual.add(imgfase01);
   let vetorTexto = [{nome:"Floppy", texto:"Agora que compramos o que precisamos, lembrei que devemos ter algumas coisas no porão lá de casa que podemos utilizar para terminar de enfeitar nossa festa."},{nome:"Jiló",texto:"Seria muito bom ter uma faixa..."},{nome:"Lôlô", texto:"Hum! Poderíamos escrever uma saudação em esperanto para os convidados."},{nome:"Floppy",texto:"Sim! Isso os deixariam muito felizes!"},{nome:"Lôlô",texto:"Muito bem! Floppy, você se lembra do que tem lá?"},{nome:"Floppy",texto:"Bem… se bem me lembro temos uma lona, barbante para prender ela, alguns pincéis, tinta, cadeiras, pratos, guardanapos, copos, um pacote de talher, alguns chapéus de festa, um pouco de confete e serpentina que sobrou do carnaval."},{nome:"Lôlô",texto:"Ótimo, vamos precisar deles. Tanto para fazermos a faixa quanto para deixarmos como extras, como os pratinhos e os copos. Enquanto andamos de volta para casa, vou ensiná-los como dizer cada um desses objetos."},{nome:"Lôlô",texto:"Hum… Alguns desses objetos eu já ensinei para vocês. Então vou ensinar como são os nomes desses outros objetos."},{nome:"Jiló e Floppy",texto:"Certo!"},{nome:"Lolô",texto:"Muito bem, a lona que queremos para fazer a faixa se chama TOLO. Para escrever nela utilizamos um BROSO, que é um pincel, junto de uma INKO da nossa cor favorita. INKO é como chamamos a tinta."},{nome:"Floppy",texto:"Isso é fácil de lembrar!"},{nome:"Jiló",texto:"E para prender a TOLO? Utilizamos o que?"},{nome:"Lôlô",texto:"Para amarrar a lona, utilizamos uma KORDO para prendê-la e se quisermos amarrá-la bem alto podemos subir numa SEĜO. KORDO é como chamamos o barbante que utilizaremos para amarrar a lona e se vocês lembrarem bem SEĜO é como chamamos qual móvel?"},{nome:"Jiló e Floppy",texto:"Uma cadeira!"},{nome:"Lôlô",texto:"Isso mesmo! Vejo que aprenderam bem."},{nome:"Floppy",texto:"Quando chegarmos em casa vamos reunir todos esses itens para deixar a festa bem organizada."},{nome:"Floppy",texto:"Oh não!"},{nome:"Jiló",texto:"Que bagunça..."},{nome:"Lôlô",texto:"Parece que vamos ter um belo trabalho para encontrar o que queremos. Vamos lá!"}];
   let floppy = game.add.image(100,300,"floppy",1);
@@ -394,13 +394,19 @@ function dialogoQuatro(){ // dialogo do quarto puzzle
       case 15:
         jilo.frame = 3;
         lolo.frame = 3;
+        imgfase01.loadTexture("backgroundlevels");
       break;
       case 16:
         lolo.frame = 3;
         jilo.frame = 7;
+        imgfase01.alpha = 0;
+        imgfase01.loadTexture("cenario4");
+        let efeitoCenario = game.add.tween(imgfase01);
+        efeitoCenario.to({alpha:1},2000,"Linear",true);
       break;
       case 17:
         jilo.frame = 3;
+        
       break;
       case 18:
         lolo.frame = 4;

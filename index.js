@@ -89,6 +89,7 @@ function preload(){
   game.load.atlasJSONHash("contagem","imagens/interface/contagem.png","imagens/interface/contagem.json");
   game.load.image("quadrado","imagens/interface/quadrado.png");
   game.load.image("coresDialogo1","imagens/puzzle1/cores.png");
+  game.load.image("cenario4","imagens/interface/completoP4.png");
 }
 function create(){
   game.scale.scaleMode = Phaser.ScaleManager.aspectRatio;
